@@ -28,7 +28,6 @@ Hibridos: Java, Python, C#.
 #Is Java compiled or interpreted, or both?
 Java es tanto lenguaje compilado como lenguaje interpretado ya que Java cuenta con un entorno de ejecución que lee el lenguaje compilado (ByteCode) y que luego es interpretado por la Java Virtual Machine(JVM). El interprete con que cuenta Java es diferente a cualquier otro, ya que lo que interpreta es el código de bytes, y no un código de lenguaje máquina. Tambíen según el entorno el código de bytes, puede ser compilado con anticipación, compilado justo a tiempo, interpretado o ser ejecutado directamente por un procesador compatible.
 
-
 #Pseudocode Currency Converter exercise
 
 Inicio
@@ -45,6 +44,47 @@ Fin
 Los lenguajes de alto nivel, permiten que una persona pueda programar con una sintaxis parecida a la de los humanos, osea que abstrae todo el proceso de traducir el programa y deja que la persona escriba su programa con una sintaxis parecida a la de los humanos.
 
 Los lenguajes de bajo nivel, son los que contienen menos abstracción, y que son más cercanos al lenguaje máquina.
+
+
+## Wednesday
+
+Mi fecha y año de nacimiento -> 2000, 08-06-2000
+
+Año -->2000
+Metodo 1: Se calculan las potencias de base 2 hasta que uno de los valores de la lista de potencias de base 2 sea mayor al numero que deseamos encontrar el numero binario.
+
+=> 2000 -> 
+
+Paso 1: Se calcula la potencia de base 2 mientras sean menores al numero que se desea calcular su valor binario (2000 > 1024 ✔)
+
+2^11 = 2048, 2^10 = 1024, 2^9 = 512, 2^8 = 256, 2^7 = 128, 2^6 = 64, 2^5 = 32, 2^4 = 16, 2^3 = 8, 2^2 = 4, 2^1 = 2, 2^0 = 1
+
+Paso 2: Se resta el numero a pasar a binario, con el ultimo valor de la potencia de base 2 calculado.
+
+2000 - 1024 = 976.
+
+Paso 3: El resultado obtenido de la resta, se compara con cada uno de los valores de la lista de potencia de base 2, y cuando se encuentre el numero mas alto que este por debajo del resultado, se le vuelve a restar. y asi sucesivamente.
+
+2000 -> 1024 + 512 + 256 + 128 + 64 + 8 + 4 + 2 + 1 + 1 = 2000
+
+2000 - 1024 = 976, resultado = 976, 976 >= 1024 X, 976 >= 512 ✔  
+976 - 512 = 464, resultado = 464, 464 >= 512 X, 464 >= 256 ✔   
+464 - 256 = 208, resultado = 208, 208 >= 256 X, 208 >= 128 ✔    
+208 - 128 = 80, resultado = 80, 80 >= 128 X, 80 >= 64 ✔         
+80 - 64 = 16, resultado = 16, 16 >= 64 X, 16 >= 32 X, 16 >= 16 ✔
+16 - 16 = 0, resultado = 0 ✔
+Fin
+
+Paso 4: A los numeros binarios que si se usaron, se les da el valor de 1, y a los que no el valor de 0. Quedando asi en la lista:
+----------------------------------------------------------------
+| 2048 | 1024 | 512 | 256 | 128 | 64 | 32 | 16 | 8 | 4 | 2 | 1 |
+----------------------------------------------------------------
+|------|   1  |  1  |  1  |  1  |  1 |  0 |  1 | 0 | 0 | 0 | 0 |
+----------------------------------------------------------------
+Obteniendo asi el numero binario de mi fecha de cumpleaños (2000) en binario: 11111010000 
+
+
+
 
 
 
