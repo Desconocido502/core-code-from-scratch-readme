@@ -88,7 +88,7 @@ Obteniendo asi el numero binario de mi fecha de cumpleaños (2000) en binario: 1
 1.Create a program that adds any two given numbers provided by the user.
 Crearemos el programa en MIPS, que lee dos numeros ingresados por el usuario, y nos devolvera la suma de ambos valores.
 
-  .data   # ->Aqui se almacenan los valores adicionales, se almacenan tres cadena que nos serviran para la lectura del user.
+  .data   # ->Aqui se almacenan los valores adicionales, se almacenan tres cadenas que nos serviran para la lectura del user.
 	      val1: .asciiz "\nIngrese el primer valor: "
 	      val2: .asciiz "\nIngrese el segundo valor: "
 	      result_m: .asciiz "\n El resultado de la suma es: "
@@ -126,8 +126,17 @@ Crearemos el programa en MIPS, que lee dos numeros ingresados por el usuario, y 
 Fin del programa que suma dos numeros dados por el usuario en MIPS, (Lenguaje de bajo nivel - Assembler)
 
 2.Create a program that displays your name.
+Crearemos el programa que imprime tu nombre en MIPS.
 
 
+  .data	      # ->Aqui se almacenan los valores adicionales, se almacenan una cadena que nos servira para imprimir un nombre.
+	      mi_nombre: .asciiz "\nHello!, my name is CARLOS, and I am learning MIPS!!!"
+	      
+  .text       # -> Aqui se coloca toda la parte del codigo a procesar
+	      main:  # -> Aqui es el punto de inicio del programa
+              li $v0, 4             # -> Se le dice a la computadora que estamos a punto de imprimir un valor
+              la $a0, mi_nombre     # -> Se esta cargando la mezcla deseada para imprimir, siempre va despues de decirle a la computadora que vamos a imprimir
+              syscall               # -> Se llama al sistema para que imprime la cadena seleccionada en este caso la cadena mi_nombre
 
 
 
