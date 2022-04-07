@@ -138,6 +138,6 @@ Crearemos el programa que imprime tu nombre en MIPS.
               la $a0, mi_nombre     # -> Se esta cargando la mezcla deseada para imprimir, siempre va despues de decirle a la computadora que vamos a imprimir
               syscall               # -> Se llama al sistema para que imprime la cadena seleccionada en este caso la cadena mi_nombre
 
-
+Fin del programa un nombre en una cadena en MIPS, (Lenguaje de bajo nivel - Assembler)
 
 
