@@ -84,6 +84,48 @@ Paso 4: A los numeros binarios que si se usaron, se les da el valor de 1, y a lo
 Obteniendo asi el numero binario de mi fecha de cumpleaños (2000) en binario: 11111010000 
 
 
+#MIPS
+1.Create a program that adds any two given numbers provided by the user.
+Crearemos el programa en MIPS, que lee dos numeros ingresados por el usuario, y nos devolvera la suma de ambos valores.
+
+  .data   # ->Aqui se almacenan los valores adicionales, se almacenan tres cadena que nos serviran para la lectura del user.
+	      val1: .asciiz "\nIngrese el primer valor: "
+	      val2: .asciiz "\nIngrese el segundo valor: "
+	      result_m: .asciiz "\n El resultado de la suma es: "
+  .text  # -> Aqui se coloca toda la parte del codigo a procesar
+	      main: # -> Aqui es el punto de inicio del programa
+              li $v0, 4       # -> Se le dice a la computadora que estamos a punto de imprimir un valor
+              la $a0, val1    # -> Se esta cargando la mezcla deseada para imprimir, siempre va despues de decirle a la computadora que vamos a imprimir
+              syscall         # -> Se llama al sistema para que imprime la cadena seleccionada en este caso la cadena val1
+
+              li $v0, 5       # -> Se prepara para recibir una entrada.
+              syscall         # -> El sistema procesa la entrada (Lee la entrada del usuario)
+
+              move $t0, $v0   # -> Se mueve el valor de entrada del registro general a un registro "seguro" que es para almacenamiento de valores
+              
+              # -> Se realiza lo mismo que en los pasos anteriores.
+              li $v0, 4
+              la $a0, val2
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t1, $v0   # -> Se mueve el valor de entrada del registro general a un registro nuevo, en este caso a $t1, ya que $t0. se encuentra ocupado
+
+              add $t2, $t0, $t1  # -> Se suman los valores almacenados en $t0 y $t1, y se almacenan en $t2
+              
+              li $v0, 4          # -> Estamos a punto de imprimir un valor (de la cadena resul_m)
+              la $a0, result_m   #Cargando la mezcla deseada a imprimir
+              syscall            # -> Se llama al sistema para que muestre la impresión de la cadena
+              
+              li $v0, 1         # -> Se le dice a la computadora que se imprimirá un número
+              move $a0, $t2     # -> Se le indica a la computadora donde esta el resultado de la suma, que se va a imprimir
+              syscall           # -> Se llama al sistema para que imprima dicho valor
+
+Fin del programa que suma dos numeros dados por el usuario en MIPS, (Lenguaje de bajo nivel - Assembler)
+
+2.Create a program that displays your name.
 
 
 
