@@ -143,7 +143,7 @@ Fin del programa un nombre en una cadena en MIPS, (Lenguaje de bajo nivel - Asse
 
 7-04-2022
 # Thursday
-In this exercise you must use an iterative flow control to be able to print all the even numbers in the range of numbers from 0 to 100. Remember that you should not print each number, you should use a flow control structure to perform the exercise.
+1. In this exercise you must use an iterative flow control to be able to print all the even numbers in the range of numbers from 0 to 100. Remember that you should not print each number, you should use a flow control structure to perform the exercise.
 
 Existe tres formas de realizar el ejercicio con un control de flujo iterativo, los cuales son for, while, do-while:
 
@@ -180,7 +180,7 @@ do {
 ### 2, 4, 6, 8, 10, ..., 80, 82, 84, 86, 88, 90, 92 ,94 ,96,98,100
 Asi obteniendo el mismo resultado para las tres formas de obtener los numeros pares entre 0 y 100.
 
-The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code.
+2. The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code.
 
 ### Código con error
 ```javascript
