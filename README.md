@@ -143,3 +143,40 @@ Fin del programa un nombre en una cadena en MIPS, (Lenguaje de bajo nivel - Asse
 
 7-04-2022
 # Thursday
+In this exercise you must use an iterative flow control to be able to print all the even numbers in the range of numbers from 0 to 100. Remember that you should not print each number, you should use a flow control structure to perform the exercise.
+
+Existe tres formas de realizar el ejercicio con un control de flujo iterativo, los cuales son for, while, do-while:
+
+## Con for
+```javascript
+for (let i = 1; i <= 100; i++) {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+}
+```
+
+## Con while
+```javascript
+let i = 1;
+while (i <= 100){
+  if((i % 2) == 0){
+    console.log(i);
+  }
+  i +=1;
+}
+```
+
+## Con do-while
+```javascript
+let i = 1;
+do {
+  if (i % 2 == 0) {
+    console.log(i);
+  }
+  i += 1;
+} while (i <= 100);
+```
+
+
+
