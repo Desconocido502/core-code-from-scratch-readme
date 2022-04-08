@@ -192,7 +192,7 @@ if ((cond = true)) {
   console.log('The cond variable is false');
 }
 ```
-El error que contiene el código anterior es que esta asignando un valor verdadero en la condición de la sentencia if, esto se debería realizar antes de la sentencia if, osea que debería ser:
+El error que contiene el código anterior es que esta asignando un valor verdadero en la condición de la sentencia if, esto se debería realizar antes de la sentencia if, ya que en la condicion de la sentencia if se debe de comparar valores, más no asignar, ya que al asignar en la condicional, se le dice a la variable cond que tome el valor de true(verdadero), osea que debería ser:
 ```javascript
 var cond = false;
 
