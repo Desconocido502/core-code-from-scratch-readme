@@ -180,5 +180,41 @@ do {
 ### 2, 4, 6, 8, 10, ..., 80, 82, 84, 86, 88, 90, 92 ,94 ,96,98,100
 Asi obteniendo el mismo resultado para las tres formas de obtener los numeros pares entre 0 y 100.
 
+The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code.
+
+### Código con error
+```javascript
+var cond = false;
+
+if ((cond = true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+```
+El error que contiene el código anterior es que esta asignando un valor verdadero en la condición de la sentencia if, esto se debería realizar antes de la sentencia if, osea que debería ser:
+```javascript
+var cond = false;
+
+cond = true;
+.....
+```
+Para terminar de arreglar el problema que causó el programador, solo se tiene que colocar la variable cond en el condición de la sentencia if, quedando como lo siguiente:
+
+### Código sin error
+```javascript
+var cond = false;
+
+cond = true;
+if ((cond)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+}
+```
+
+
+
+
 
 
