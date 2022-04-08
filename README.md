@@ -141,3 +141,5 @@ Crearemos el programa que imprime tu nombre en MIPS.
 Fin del programa un nombre en una cadena en MIPS, (Lenguaje de bajo nivel - Assembler)
 
 
+7-04-2022
+# Thursday
