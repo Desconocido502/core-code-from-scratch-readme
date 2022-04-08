@@ -177,6 +177,8 @@ do {
   i += 1;
 } while (i <= 100);
 ```
+### 2, 4, 6, 8, 10, ..., 80, 82, 84, 86, 88, 90, 92 ,94 ,96,98,100
+Asi obteniendo el mismo resultado para las tres formas de obtener los numeros pares entre 0 y 100.
 
 
 
