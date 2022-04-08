@@ -206,8 +206,42 @@ if ((cond)) {
   console.log('The cond variable is false');
 }
 ```
+3. You must create the code that follows the following logic, if the given number is 100, take this number as special and show the following message: "This is a special number!", but if the number is less than 1000, multiple of 10 and different from 100, you must show the following message: "This number is almost special". if none of the given conditions are met show the following message: "Just a regular number". Another developer was trying to program the logic, but apparently couldn't, you need to fix the code to work properly.
 
+## Código incompleto
+```javascript
+var n = 100;
 
+if (n == 100) {
+  console.log('This is a special number!');
+}
+if (n < 1000) {
+  console.log('');
+} else {
+  console.log('Just a regular number');
+}
+if (n % 10 == 0) {
+  console.log('This number is multiple of 10');
+}
+```
+Para resolver el problema de lógica, se tiene que entender que es lo que se solicita, para esto iremos paso a paso a lo solicitado.
+1. Si el número es 100, se toma el número como especial, mostrando el mensaje: "Este es un número especial".
+2. Si el número es menor a 1000, y es múltiplo de 10 y diferente de 100, se muestra el mensaje: "Este número es casi especial".
+3. Sino cumplió con ninguna de las condiciones anteriores, simplemente muestra el mensaje: "Sólo un número regular".
+
+El error del desarrollador que estaba intentando desarrollar el código, fue no entender de manera correcta el uso de la sentencia if-else, ya que estaba tomando el 2do caso en 2 partes separadas y le falto agregar una condición más. En tal caso, al llevar la lectura correcta, se puede observar que en el segundo caso se encuentra un operador booleano '&&' de forma ímplicita en la oración, y agregando la última condición faltante, se obtuvo lo siguiente:
+```javascript
+var n = 100;
+
+if (n == 100) {
+  console.log("This is a special number!");
+} else if (n < 1000 && n % 10 == 0 && n != 100) {
+  console.log("This number is almost special");
+} else {
+  console.log("Just a regular number");
+}
+```
+Así obteniendo la forma correcta de resolver el programa.
 
 
 
