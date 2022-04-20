@@ -446,6 +446,46 @@ finalGrade(85,5)
 
 # **Wednesday** 20-04-2022
 
-# Holiday VIII - Duty Free exercise
+## Holiday VIII - Duty Free exercise
+
+<p align="justify">The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.</p>
+<p align="justify">You will be given the high street price (normPrice), the duty free discount (discount) and the cost of the holiday.</p>
+<p align="justify">For example, if a bottle cost £10 normally and the discount in duty free was 10%, you would save £1 per bottle. If your holiday cost £500, the answer you should return would be 500.</p>
+<p align="justify">All inputs will be integers. Please return an integer. Round down.</p>
+
+Función a completar
+
+```javascript
+function dutyFree(normPrice, discount, hol){
+
+}
+```
+
+<p align="justify">Se nos solicita que a partir de tres valores (precio de venta, descuento sin impuestos, costo de vacaciones), obtengamos el calculo de cuántas botellas de whisky libre de impuesto se pueden comprar. Para ello evaluamos la situación.</p>
+
+<p align="justify">Lo primero es entender que nos solicitan, y lo que se solicita es el calculo de ¿cuántas botellas de whisky se pueden compar?</p>
+<p align="justify">¿Con que lo calculamos?, Se calcula con los datos ingresados, que son:</p>
+<ul>
+	<li>precio de venta</li>
+	<li>descuento sin impuestos</li>
+	<li>costo de vacaciones</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
