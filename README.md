@@ -300,12 +300,12 @@ function uniTotal (string) {
 ```javascript
 function uniTotal (string) {
 // total up dem unicodes!
-  let cadena = string.split('');
+  string = string.split('');
   let totalAscii = 0;
-  for(var i = 0; i < cadena.length; i++){
-      totalAscii += parseInt(cadena[i].charCodeAt(0));
+  for(var i = 0; i < string.length; i++){
+      totalAscii += parseInt(string[i].charCodeAt(0));
   }
-  return (totalAscii);
+  return totalAscii;
 }
 ```
 
