@@ -295,7 +295,7 @@ function uniTotal (string) {
 <p align="justify">Se nos pide que retornemos la suma de todos los caracteres ASCII de una cadena como un valor entero, para esto haremos uso de varios metodos que nos provee JS.</p>
 
 <ul>
-  <li>Metodo split: Se usa para dividir cadenas de texto, basándose en un separador dado como argumento, y devolver un Array con los elementos separados.</li>
+  <li>Metodo split: Se usa para dividir cadenas de texto, basándose en un separador dado como argumento, y devuelve un Array con los elementos separados.</li>
   <li>Metodo parseInt: Convierte (parsea) un argumento de tipo cadena y devuelve un entero en una especificada.</li>
   <li>charCodeAt: Devuelve el valor Unicode, osea código UTF-16.</li>
 </ul>
