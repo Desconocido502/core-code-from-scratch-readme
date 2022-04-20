@@ -262,3 +262,21 @@ if (n == 100) {
 }
 ```
 <p align="justify">Así obteniendo la forma correcta de resolver el programa.</p>
+
+# **Tuesday**
+
+## Multiply
+This code does not execute properly. Try to figure out why.
+Funcion con error:
+```javascript
+function multiply(a, b){
+  a * b
+}
+```
+<p align="justify">Se nos dice que el código no se ejecuta corractamente, esto se debe a que, los valores si se multiplican, pero no se retorna el resultado de la multiplicación, para completar la funcion de forma correcta, se debe de colocar el return antes de la multiplicación asi el resultado de esa multiplicación, es la que se devolverá obteniendo el siguiente resultado:</p>
+```javascript
+function multiply(a, b){
+  return a * b
+}
+```
+<p align="justify"></p>
