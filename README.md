@@ -263,11 +263,13 @@ if (n == 100) {
 ```
 <p align="justify">Así obteniendo la forma correcta de resolver el programa.</p>
 
-# **Tuesday**
+# **Tuesday** 19-04-2022
 
 ## Multiply
 This code does not execute properly. Try to figure out why.
+
 Función con error:
+
 ```javascript
 function multiply(a, b){
   a * b
