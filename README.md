@@ -318,6 +318,48 @@ uniTotal("Mary Had A Little Lamb")
 
 <p>Obteniendo como respuesta: <strong>1873</strong></p>
 
+## Char From ASCII Value
+
+<p align="justify">Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.</p>
+Función base:
+
+```javascript
+function getChar(c){
+  // ...
+}
+```
+
+<p align="justify">A partir de un número de entrada como argumento se nos pide que la función devuelva el carácter ASCII correspondiente al número de entrada. Para ello, se hace uso de un método que posee JS.</p>
+
+<ul>
+  <li>Metodo String.fromCharCode: Es un método estático, que nos devuelve una cadena a partir de una secuencia especificada de unidades de código UTF-8.</li>
+</ul>
+
+Así, completando la función se tiene:
+
+```javascript
+function getChar(c){
+  // ...
+  c = String.fromCharCode(c);
+  return c
+}
+```
+
+<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+
+```javascript
+getChar(65)
+```
+
+<p>Obteniendo como respuesta: <strong>'A'</strong></p>
+
+
+
+
+
+
+
+
 
 
 
