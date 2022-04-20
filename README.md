@@ -267,7 +267,7 @@ if (n == 100) {
 
 ## Multiply
 This code does not execute properly. Try to figure out why.
-Funcion con error:
+Función con error:
 ```javascript
 function multiply(a, b){
   a * b
@@ -280,4 +280,39 @@ function multiply(a, b){
   return a * b
 }
 ```
+## ASCII Total
+<p align="justify">You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.</p>
+Función a completar
+```javascript
+function uniTotal (string) {
+// total up dem unicodes!
+}
+```
+<p align="justify">Se nos pide que retornemos la suma de todos los caracteres ASCII de una cadena como un valor entero, para esto haremos uso de varios metodos que nos provee JS.</p>
+
+<ul>
+  <li>Metodo split: Se usa para dividir cadenas de texto, basándose en un separador dado como argumento, y devolver un Array con los elementos separados.</li>
+  <li>Metodo parseInt: Convierte (parsea) un argumento de tipo cadena y devuelve un entero en una especificada.</li>
+  <li>charCodeAt: Devuelve el valor Unicode, osea código UTF-16.</li>
+</ul>
+
+<p align="justify">Obteniendo asi la siguiente salida:</p>
+```javascript
+function uniTotal (string) {
+// total up dem unicodes!
+  let cadena = string.split('');
+  let totalAscii = 0;
+  for(var i = 0; i < cadena.length; i++){
+      totalAscii += parseInt(cadena[i].charCodeAt(0));
+  }
+  return (totalAscii);
+}
+```
+
+
+
+
+
+
+
 <p align="justify"></p>
