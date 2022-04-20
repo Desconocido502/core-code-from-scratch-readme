@@ -341,7 +341,6 @@ Así, completando la función se tiene:
 
 ```javascript
 function getChar(c){
-  // ...
   return String.fromCharCode(c);
 }
 ```
