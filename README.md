@@ -283,11 +283,13 @@ function multiply(a, b){
 ## ASCII Total
 <p align="justify">You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.</p>
 Función a completar:
+
 ```javascript
 function uniTotal (string) {
 // total up dem unicodes!
 }
 ```
+
 <p align="justify">Se nos pide que retornemos la suma de todos los caracteres ASCII de una cadena como un valor entero, para esto haremos uso de varios metodos que nos provee JS.</p>
 
 <ul>
