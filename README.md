@@ -399,11 +399,50 @@ addBinary(5,9)
   <li>0, in other cases</li>
 </ul>
 
+Función a completar:
 
+```javascript
+function finalGrade (exam, projects) {
+  return // final grade
+}
+```
 
+<p align="justify">En base a los dos argumentos (exam, projects), que se le dan a la función, se nos solicita que devuelva un número (calificación final), en base a los cuatro tipos de calificaciones finales.</p>
 
+En este método no fue necesario implementar métodos propios de JS.
 
+Se tienen las cuatro opciones:
 
+<ul>
+  <li>Se da calificación de 100, si la calificación del examen es mayor a 90 <strong>o</strong> si la cantidad de proyectos terminados es mayor a 10.</li>
+  <li>Se da calificación de 90, si la calificación del examen es mayor a 75 <strong>y</strong> si la cantidad de proyectos terminados es como mínimo 5.</li>
+  <li>Se da calificación de 75, si la calificación del examen es mayor a 50 <strong>y</strong> si la cantidad de proyectos terminados es como mínimo 2.</li>
+  <li>Se da calificación de 0, en cualquier otro caso.</li>
+</ul>
+
+Obteniendo así, la siguiente función.
+
+```javascript
+function finalGrade (exam, projects) {
+  let calificacion_final = 0
+  if (exam > 90 || projects > 10) {
+      calificacion_final =  100
+  }else if (exam > 75 && projects >= 5) {
+      calificacion_final = 90
+  }else if (exam > 50 && projects >= 2) {
+      calificacion_final = 75
+  }
+  return calificacion_final// final grade
+}
+```
+
+<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+
+```javascript
+finalGrade(85,5)
+```
+
+<p>Obteniendo como respuesta: <strong>90</strong></p>
 
 
 
