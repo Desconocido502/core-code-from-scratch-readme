@@ -386,4 +386,24 @@ addBinary(5,9)
 
 <p>Obteniendo como respuesta: <strong>'1110'</strong></p>
 
+## Student's Final Grade
+
+<p align="justify">This function should take two arguments: exam - grade for exam (from 0 to 100); projects - number of completed projects (from 0 and above);</p>
+
+<p align="justify">This function should return a number (final grade). There are four types of final grades:</p>
+
+<ul>
+  <li>100, if a grade for the exam is more than 90 or if a number of completed projects more than 10.</li>
+  <li>90, if a grade for the exam is more than 75 and if a number of completed projects is minimum 5.</li>
+  <li>75, if a grade for the exam is more than 50 and if a number of completed projects is minimum 2.</li>
+  <li>0, in other cases</li>
+</ul>
+
+
+
+
+
+
+
+
 
