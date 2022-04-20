@@ -310,7 +310,7 @@ function uniTotal (string) {
   return totalAscii;
 }
 ```
-<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+<p align="justify">Haciendo una prueba se obtiene lo siguiente:</p>
 
 ```javascript
 uniTotal("Mary Had A Little Lamb")
@@ -345,7 +345,7 @@ function getChar(c){
 }
 ```
 
-<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+<p align="justify">Haciendo una prueba se obtiene lo siguiente:</p>
 
 ```javascript
 getChar(65)
@@ -378,7 +378,7 @@ function addBinary(a,b) {
 }
 ```
 
-<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+<p align="justify">Haciendo una prueba se obtiene lo siguiente:</p>
 
 ```javascript
 addBinary(5,9)
@@ -436,7 +436,7 @@ function finalGrade (exam, projects) {
 }
 ```
 
-<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+<p align="justify">Haciendo una prueba se obtiene lo siguiente:</p>
 
 ```javascript
 finalGrade(85,5)
