@@ -444,5 +444,8 @@ finalGrade(85,5)
 
 <p>Obteniendo como respuesta: <strong>90</strong></p>
 
+# **Wednesday** 20-04-2022
+
+# Holiday VIII - Duty Free exercise
 
 
