@@ -307,6 +307,7 @@ function uniTotal (string) {
   }
   return totalAscii;
 }
+}
 ```
 
 
