@@ -282,7 +282,7 @@ function multiply(a, b){
 ```
 ## ASCII Total
 <p align="justify">You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.</p>
-Función a completar
+Función a completar:
 ```javascript
 function uniTotal (string) {
 // total up dem unicodes!
