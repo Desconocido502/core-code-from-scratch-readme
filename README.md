@@ -316,7 +316,7 @@ function uniTotal (string) {
 uniTotal("Mary Had A Little Lamb")
 ```
 
-<p>Obteniendo como respuesta: 1873</p>
+<p>Obteniendo como respuesta: <strong>1873</strong></p>
 
 
 
