@@ -311,9 +311,11 @@ function uniTotal (string) {
 }
 ```
 <p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+
 ```javascript
 uniTotal("Mary Had A Little Lamb")
 ```
+
 <p>Obteniendo como respuesta: 1873</p>
 
 
