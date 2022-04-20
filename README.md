@@ -354,15 +354,36 @@ getChar(65)
 <p>Obteniendo como respuesta: <strong>'A'</strong></p>
 
 
+## Binary Addition
 
+<p align="justify">Implement a function that adds two numbers together and returns their sum in binary. The conversion can be done before, or after the addition.</p>
 
+```javascript
+function addBinary(a,b) {
+  ....
+}
+```
 
+<p align="justify">Se nos pide que ingresados dos números se devuelva la suma de ambos en binario. Para tal caso, usaremos nuevamente un método provisto por JS.</p>
 
+<ul>
+  <li>Metodo toString: Devuelve una cadena que representa al objeto Number especificado, el objeto Number es un valor entero comprendido entre 2 y 36, que es la base  la que se esta buscando pasar el valor. </li>
+</ul>
 
+Así, completando la función se tiene:
 
+```javascript
+function addBinary(a,b) {
+  return (a + b).toString(2)
+}
+```
 
+<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
 
+```javascript
+addBinary(5,9)
+```
 
-
+<p>Obteniendo como respuesta: <strong>'1110'</strong></p>
 
 
