@@ -296,19 +296,6 @@ function uniTotal (string) {
   <li>charCodeAt: Devuelve el valor Unicode, osea código UTF-16.</li>
 </ul>
 
-<p align="justify">Obteniendo asi la siguiente salida:</p>
-```javascript
-function uniTotal (string) {
-// total up dem unicodes!
-  string = string.split('');
-  let totalAscii = 0;
-  for(var i = 0; i < string.length; i++){
-      totalAscii += parseInt(string[i].charCodeAt(0));
-  }
-  return totalAscii;
-}
-}
-```
 
 
 
@@ -316,4 +303,5 @@ function uniTotal (string) {
 
 
 
-<p align="justify"></p>
+
+
