@@ -297,6 +297,7 @@ function uniTotal (string) {
   <li>Metodo parseInt: Convierte (parsea) un argumento de tipo cadena y devuelve un entero en una especificada.</li>
   <li>charCodeAt: Devuelve el valor Unicode, osea código UTF-16.</li>
 </ul>
+<p align="justify">Asi, completanto la función se tiene: </p>
 
 ```javascript
 function uniTotal (string) {
@@ -309,8 +310,11 @@ function uniTotal (string) {
   return totalAscii;
 }
 ```
-
-
+<p align="justify">Haciendo una prueba se obtiene lo siguiente</p>
+```javascript
+uniTotal("Mary Had A Little Lamb")
+```
+<p>Obteniendo como respuesta: 1873</p>
 
 
 
