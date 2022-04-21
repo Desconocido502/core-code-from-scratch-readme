@@ -656,8 +656,21 @@ function remove (string) {
 	<li>Método subString: Devuelve la parte de un string ente los índice inicial y final, o al final de la cadena.</li>
 </ul>
 
-![pikachu triste](https://www.levelup.com/core/scripts/image_proxy.php?img=https://media.giphy.com/media/7SF5scGB2AFrgsXP63/giphy.gif)
+<!-- ![pikachu triste](https://www.levelup.com/core/scripts/image_proxy.php?img=https://media.giphy.com/media/7SF5scGB2AFrgsXP63/giphy.gif) -->
 
+```javascript
+function remove (string) {
+    bandera = true
+    while (bandera){
+        if (string[string.length -1] === "!"){
+            string = string.substring(0,(string.length-1))
+        }else{
+            bandera = false
+        }
+    }
+    return string
+}
+```
 
 
 
