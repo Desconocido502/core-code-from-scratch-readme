@@ -471,11 +471,29 @@ function dutyFree(normPrice, discount, hol){
 	<li>costo de vacaciones</li>
 </ul>
 
+<p>¿Cómo lo calculamos?</p> 
+<ul>
+	<li>Lo primero que se hace, es convertir el valor del impuesto en un porcentaje, esto se lográ dividiendo el descuento sin impuestos dentro de 100</li>
+	<li>Luego se multiplica el el porcentaje obtenido con el precio de venta  de la botella de whisky.</li>
+	<li>Por último, el costo de las vacaciones se divide dentro de la multiplicación obtenida anteriormente. </li>
+</ul>
 
+<p align="justify">Así obteniendo, la siguiente función:</p>
 
+```javascript
+function dutyFree(normPrice, discount, hol){
+  //hol/(normPrice*discount)
+  return Math.floor(hol/(normPrice*(discount/100)));
+}
+```
 
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
 
+```javascript
+dutyFree(24,35,3000)
+```
 
+<p>Obteniendo como respuesta: <strong>357</strong></p>
 
 
 
