@@ -554,6 +554,52 @@ function validSpacing(s) {
 }
 ```
 
+<p align="justify">Se nos solicita, a partir de una cadena como argumento, que se verifique si una cadena tiene un espacio válido. La función debe devolver un true en caso de que la cadena sea válida con sus espaciados y false en caso de que la cadena no sea válida con sus espaciados. Para que la cadena sea válida, se tienen las siguientes validaciones:</p>
+
+<ol>
+	<li>No lleva espacios al inicio de la cadena</li>
+	<li>No lleva espacios al final de la cadena</li>
+	<li>Puede ser cualquier secuencia consecuiva de caracteres sin espacio</li>
+	<li>No puede haber mas de un espacio por cada palabra en la cadena</li>
+	<li>Si la cadena esta vacía es válida</li>
+</ol>
+
+<p align="justify">Tomando en consideración todo lo anterior, se realizan los pasos siguientesÑ</p>
+
+<ul>
+	<li>Si la cadena al inicio o al final tiene un espacio vacío retorna false</li>
+	<li>Sino, se tendra que hacer un for que recorra la cadena</li>
+	<li>Dentro del for verificar que no exista un espacio seguido de otro, si es así se retorna false</li>
+	<li>En caso de que dentro del for no se encuentre un espacio seguido de otro, se retorna true</li>
+</ul>
+
+Obteniendo la siguiente función:
+
+```javascript
+function validSpacing(s) {
+  if (s[0] === ' ' || s[s.length-1] === ' ') {
+      return false;
+  }else{
+      for (var i = 0; i < s.length; i++) {
+           if (s[i] === ' ' && s[i+1] === ' ') return false;
+      }
+      return true;
+  }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
