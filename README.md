@@ -596,14 +596,44 @@ validSpacing('Hello  world')
 
 <p>Obteniendo como respuesta: <strong>false</strong></p>
 
+## Fake Binary exercise
 
+<p align="justify">Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.</p>
+<p align="justify">Note: input will never be an empty string.</p>
 
+Función a completar:
 
+```javascript
+function fakeBin(x){
+}
+```
 
+<p align="justify">A partir de una cadena de digitos como argumento de la función, se nos pide retornar una cadena de 1´s y 0´s.</p>
+<p align="justify">Cualquier digito que sea menor a 5 se le dará el valor de '0' en caso de que sea mayor o igual a 5 se le dará el valor de '1'.</p>
 
+<p align="justify">Tomando en cuenta las validaciones anteriores, se obtiene la siguiente funcion:</p>
 
+```javascript
+function fakeBin(x){
+    let falso_binario = ""
+    for (var i = 0; i < x.length; i++) {
+        if (x[i] < '5') {
+            falso_binario += '0'
+        }else{
+            falso_binario += '1'
+        }
+    }
+    return falso_binario
+}
+```
 
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
 
+```javascript
+console.log(fakeBin('45385593107843568'))
+```
+
+<p>Obteniendo como respuesta: <strong>01011110001100111</strong></p>
 
 
 
