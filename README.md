@@ -689,7 +689,7 @@ function remove (string) {
 console.log(remove("!hi!!!"))
 ```
 
-<p>Obteniendo como respuesta: <strong>´!Hi´</strong></p>
+<p>Obteniendo como respuesta: <strong>"!Hi"</strong></p>
 
 
 
