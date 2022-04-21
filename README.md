@@ -588,6 +588,13 @@ function validSpacing(s) {
 }
 ```
 
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+validSpacing('Hello  world')
+```
+
+<p>Obteniendo como respuesta: <strong>false</strong></p>
 
 
 
