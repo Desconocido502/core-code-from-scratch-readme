@@ -473,8 +473,8 @@ function dutyFree(normPrice, discount, hol){
 
 <p>¿Cómo lo calculamos?</p> 
 <ul>
-	<li>Lo primero que se hace, es convertir el valor del impuesto en un porcentaje, esto se lográ dividiendo el descuento sin impuestos dentro de 100</li>
-	<li>Luego se multiplica el el porcentaje obtenido con el precio de venta  de la botella de whisky.</li>
+	<li>Lo primero que se hace, es convertir el valor del impuesto en un porcentaje, se hace dividiendo el descuento sin impuestos dentro de 100.</li>
+	<li>Luego se multiplica el porcentaje obtenido con el precio de venta  de la botella de whisky.</li>
 	<li>Por último, el costo de las vacaciones se divide dentro de la multiplicación obtenida anteriormente. </li>
 </ul>
 
