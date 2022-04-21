@@ -658,6 +658,17 @@ function remove (string) {
 
 <!-- ![pikachu triste](https://www.levelup.com/core/scripts/image_proxy.php?img=https://media.giphy.com/media/7SF5scGB2AFrgsXP63/giphy.gif) -->
 
+<p align="justify">Para resolver el problema, se hace uso de una bandera, un while, un if y de un método propio de JS.</p>
+<Ol>
+	<li>Primero, se declara una bandera que es un booleano con un valor verdadero(true)</li>
+	<li>Luego, se crea el while, dentro del while se trabaja se pregunta por lo que hay en la última posición</li>
+	<li>Si el valor en la última posición es igual a un signo de admiración(!), entra al if.</li>
+	<li>Dentro del if, a la misma cadena se le asigna una nueva cadena, osea una cadena que se le quita el signo de admiración del final de la cadena.</li>
+	<li>En caso de que no exista un signo de admiración al final de la cadena se irá al else, donde se le asigna a bandera un valor false, esto sirve para salir del bucle while.</li>
+</Ol>
+
+<p align="justify">Obteniendo así, la función completada: </p>
+
 ```javascript
 function remove (string) {
     bandera = true
@@ -671,6 +682,15 @@ function remove (string) {
     return string
 }
 ```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(remove("!hi!!!"))
+```
+
+<p>Obteniendo como respuesta: <strong>´!Hi´</strong></p>
+
 
 
 
