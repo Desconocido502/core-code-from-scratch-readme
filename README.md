@@ -495,6 +495,59 @@ dutyFree(24,35,3000)
 
 <p>Obteniendo como respuesta: <strong>357</strong></p>
 
+## Twice As Old exercise
+
+Your function takes two arguments:
+
+<ol>
+	<li>current father's age (years)</li>
+	<li>current age of his son (years)</li>
+</ol>
+
+<p align="justify">Сalculate how many years ago the father was twice as old as his son (or in how many years he will be twice as old).</p>
+
+<p align="justify">Se nos solicita, a partir de dos argumentos (edad actual del padre, edad actual del hijo), obtener el valor de hace ¿cuántos años el padre tenía el doble de la edad del hijo?.</p>
+
+Función a completar:
+
+```javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  // your code here
+}
+```
+
+<p align="justify">¿Qué hay que calcular?, Hace cuantos años el padre tenia el doble de la edad que su hijo o dentro de cuantos años el padre tendrá el doble de la edad de su hijo.</p>
+
+<ol>
+	<li>Lo primero que se tiene que hacer es, multiplicar la edad del hijo por dos.</li>
+	<li>Lo siguiente que se tendría que hacer es restar la edad del padre con el doble de la edad del hijo.</li>
+</ol>
+
+<p align="justify">Con esto, se obtiene la siguiente función:</p>
+
+```javascript
+function twiceAsOld(dadYearsOld, sonYearsOld) {
+  return Math.abs(dadYearsOld-sonYearsOld*2)
+}
+```
+
+<p align="justify">Se hace uso del método abs, ya que, como lo indica el enunciado, hace cuantos años el padre tenia el doble de la edad que su hijo <strong>O</strong> dentro de cuantos años el padre tendrá el doble de la edad de su hijo.</p>
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+twiceAsOld(36,7)
+```
+
+<p>Obteniendo como respuesta: <strong>22</strong></p>
+
+
+
+
+
+
+
+
 
 
 
