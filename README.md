@@ -637,16 +637,26 @@ console.log(fakeBin('45385593107843568'))
 
 # Thursday 21-04-2022
 
+## Remove All Exclamation Marks From The End Of Sentence exercise
 
+<p align="justify">Remove all exclamation marks from the end of sentence.</p>
 
+Función a completar:
 
+```javascript
+function remove (string) {  
+  return '';
+}
+```
 
+<p align="justify">A partir de una cadena pasada como argumento, se tienen que eliminar los signos de exclamación</p>
+<p align="justify">Para esto, se utilizará un método propio JS.</p>
 
+<ul>
+	<li>Método subString: Devuelve la parte de un string ente los índice inicial y final, o al final de la cadena.</li>
+</ul>
 
-
-
-
-
+![pikachu triste](https://www.levelup.com/core/scripts/image_proxy.php?img=https://media.giphy.com/media/7SF5scGB2AFrgsXP63/giphy.gif)
 
 
 
