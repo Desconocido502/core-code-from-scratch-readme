@@ -635,7 +635,7 @@ console.log(fakeBin('45385593107843568'))
 
 <p>Obteniendo como respuesta: <strong>01011110001100111</strong></p>
 
-
+# Thursday 21-04-2022
 
 
 
