@@ -793,4 +793,11 @@ console.log(rps('scissors','paper'));
 
 <p align="justify">For example (Input --> Output):</p>
 
+Función a completar:
+```javascript
+function persistence(num) {
+   //code me
+}
+```
+
 <p align="justify"> </p>
