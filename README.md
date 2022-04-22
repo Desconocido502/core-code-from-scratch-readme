@@ -709,7 +709,7 @@ function shortcut (string) {
 	<li>Lo primero a entender es que se nos pide, Devolver una cadena sin vocales minúsculas</li>
 	<li>¿Cómo lo hacemos?, Se hará con un if y un for</li>
 	<li>¿Cómo lo haremos?, Bien para esto, se tiene que tomar la cadena, y recorrerla con el for.</li>
-	<li>Dentro del for preguntar con un if, si la cadena en la i-ésima posición es diferente a la vocal "a", o si es diferente a la vocal "e", o si es diferente a la vocal "i", o si es diferente a la vocal "o", o o si es diferente a la vocal "u"</li>
+	<li>Dentro del for preguntar con un if, si la cadena en la i-ésima posición es diferente a la vocal "a", o si es diferente a la vocal "e", o si es diferente a la vocal "i", o si es diferente a la vocal "o", o si es diferente a la vocal "u"</li>
 	<li>En caso de que sea cierto, se concatena el carácter en la i-ésima posicón a una nueva variable.</li>
 	<li>Al final de todo se retorna el valor de la nueva variable.</li>
 </ul>
