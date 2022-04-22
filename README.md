@@ -747,17 +747,45 @@ console.log(shortcut("goodbye"))
 <p align="justify">Las reglas siguen siendo las mismas, las cuales son las siguientes.</p>
 
 <ul>
-	<li></li>
-	<li></li>
-	<li></li>
-	<li></li>
+	<li>Si un jugador saca tijeras y otro jugador saca piedra, la piedra le quita el filo a las tijeras, la piedra gana!</li>
+	<li>Si un jugador saca tijeras y otro jugador saca papel, la tijera corta el papel, la tijera gana!</li>
+	<li>Si un jugador saca papel y otro jugador saca piedra, el papel envuelve la piedra, el papel gana!</li>
+	<li>Si ambos jugadores sacan el mismo objeto, hay un empate.</li>
 </ul>
 
+<p align="justify">Siguien las reglas anteriores, es como se programará la función, solo que con la diferencia de que cuando ambos jugadores, saquen el mismo objeto, se dira Draw!, se hará uso de la estructura de control if-else if-else.</p>
 
+Función completada:
 
+```javascript
+const rps = (p1, p2) => {
+    let response = ""
+    if(p1 === "scissors" && p2 === "paper"){
+        response = "Player 1 won!"
+    }else if(p1 === "scissors" && p2 === "rock"){
+        response = "Player 2 won!"
+    }else if(p1 === "paper" && p2 === "rock"){
+        response = "Player 1 won!"
+    }else if(p1 === "paper" && p2 === "scissors"){
+        response = "Player 2 won!"
+    }else if(p1 === "rock" && p2 === "scissors"){
+        response = "Player 1 won!"
+    }else if(p1 === "rock" && p2 === "paper"){
+        response = "Player 2 won!"
+    }else{
+        response = "Draw!"
+    }
+    return response
+};
+```
 
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
 
+```javascript
+console.log(rps('scissors','paper'));
+```
 
+<p>Obteniendo como respuesta: <strong>'Player 1 won!'</strong></p>
 
 
 
