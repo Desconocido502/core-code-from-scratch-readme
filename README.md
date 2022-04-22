@@ -691,6 +691,63 @@ console.log(remove("!hi!!!"))
 
 <p>Obteniendo como respuesta: <strong>"!Hi"</strong></p>
 
+## Vowel Remover exercise
+
+<p align="justify">Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.</p>
+
+Función a completar:
+
+```javascript
+function shortcut (string) {
+  return '';
+}
+```
+
+<p align="justify">A partir de una cadena como argumento, se nos solicita eliminar todas las vocales minusculas de la cadena, y retornar la cadena.</p>
+
+<ul>
+	<li>Lo primero a entender es que se nos pide, Devolver una cadena sin vocales minúsculas</li>
+	<li>¿Cómo lo hacemos?, Se hará con un if y un for</li>
+	<li>¿Cómo lo haremos?, Bien para esto, se tiene que tomar la cadena, y recorrerla con el for.</li>
+	<li>Dentro del for preguntar con un if, si la cadena en la i-ésima posición es diferente a la vocal "a", o si es diferente a la vocal "e", o si es diferente a la vocal "i", o si es diferente a la vocal "o", o o si es diferente a la vocal "u"</li>
+	<li>En caso de que sea cierto, se concatena el carácter en la i-ésima posicón a una nueva variable.</li>
+	<li>Al final de todo se retorna el valor de la nueva variable.</li>
+</ul>
+
+<p align="justify">Obteniendo así, la función completa: </p>
+
+```javascript
+function shortcut (string) {
+    let str = ""
+    for (var i = 0; i < string.length; i++) {
+        if (string[i] !== "a" && string[i] !== "e" && string[i] !== "i" && string[i] !== "o" && string[i] !== "u" ) {
+            str += string[i]
+        }
+    }
+    return str
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(shortcut("goodbye"))
+```
+
+<p>Obteniendo como respuesta: <strong>'gdby'</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
