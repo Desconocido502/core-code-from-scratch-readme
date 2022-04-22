@@ -787,5 +787,10 @@ console.log(rps('scissors','paper'));
 
 <p>Obteniendo como respuesta: <strong>'Player 1 won!'</strong></p>
 
+## Persistent Bugger exercise
 
+<p align="justify">Write a function, persistence, that takes in a positive parameter num and returns its multiplicative persistence, which is the number of times you must multiply the digits in num until you reach a single digit.</p>
 
+<p align="justify">For example (Input --> Output):</p>
+
+<p align="justify"> </p>
