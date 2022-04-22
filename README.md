@@ -800,4 +800,52 @@ function persistence(num) {
 }
 ```
 
-<p align="justify"> </p>
+<p align="justify">Se nos dice que a partir de un parametro, se devuelva su persistencia multiplativa, osea la <strong>cantidad</strong> de veces que se debe de multiplicar los dígitos hasta que solo se llegue a un dígito.</p>
+
+<p align="justify">Se tiene que tomar el número, transformarlo a un string, dentro de un while volverlo un arreglo de caracteres, y con un for multiplicar por cada posición que existe en el arreglo y almacenarlo en una variable, a la variable que almacenaba al numero inicialmente asignarle el valor de la nueva variable, a final, se aumenta el valor de un contador en 1. Al final del proceso retornar el valor del contador.</p>
+
+
+Función completada:
+```javascript
+function persistence(num) {
+   if (num < 0) num = Math.abs(num);
+   let count = 0;
+   num = ''+num;
+   while(num.length !== 1){
+       num = ''+num;
+       num = num.split('');
+       let num2 = 1;
+       
+       for (var i = 0; i < num.length; i++) {
+           num2 = parseInt(num[i]) * num2;
+       }
+       num = ''+num2
+       count +=1;
+   }
+   return count
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(persistence(999));
+```
+
+<p>Obteniendo como respuesta: <strong>4</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
