@@ -737,7 +737,7 @@ console.log(shortcut("goodbye"))
 <p>Obteniendo como respuesta: <strong>'gdby'</strong></p>
 
 
-
+## Rock Paper Scissors! exercise
 
 
 
