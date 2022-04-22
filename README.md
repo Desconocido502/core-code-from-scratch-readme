@@ -741,7 +741,7 @@ console.log(shortcut("goodbye"))
 
 <p align="justify">Let's play! You have to return which player won! In case of a draw return Draw!.</p>
 <p align="center">
-	<img src="https://i.pinimg.com/originals/dd/a1/4c/dda14ccfabbff7efcded1b2ec971d863.gif" alt="piedra, papel o tijeras!!!" style="width:150px;"/>
+	<img src="https://i.pinimg.com/originals/dd/a1/4c/dda14ccfabbff7efcded1b2ec971d863.gif" alt="piedra, papel o tijeras!!!" style="width:200px;"/>
 </p>
 <p align="justify">Se tiene que realizar el juego de piedra, papel y tijeras!!!, a partir de dos valores como argumentos.</p>
 <p align="justify">Las reglas siguen siendo las mismas, las cuales son las siguientes.</p>
