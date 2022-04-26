@@ -903,11 +903,11 @@ Obteniendo asi, la siguiente función:
 
 ```javascript
 var countBits = function(n) {
+    
+    if(n < 0) n = Math.abs(n)
+    
     n = n.toString(2).split("")
-    const sum_binaria = n.reduce((pv,cv) => 
-        parseInt(pv) + parseInt(cv)
-    );
-    return sum_binaria
+    return n.reduce((pv,cv) => Number(pv) + Number(cv),0);
 };
 ```
 
