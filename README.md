@@ -873,8 +873,13 @@ function likes(names) {
 }
 ```
 
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
 
+```javascript
+console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
+```
 
+<p>Obteniendo como respuesta: <strong>'Alex, Jacob and 2 others likes this'</strong></p>
 
 
 
