@@ -907,7 +907,7 @@ var countBits = function(n) {
     if(n < 0) n = Math.abs(n)
     
     n = n.toString(2).split("")
-    return n.reduce((pv,cv) => Number(pv) + Number(cv),0);
+    return n.reduce((pv,cv) => parseInt(pv) + parseInt(cv),0);
 };
 ```
 
