@@ -927,7 +927,15 @@ console.log(countBits(1234))
 
 
 
-<p align="justify"></p>
+<p align="justify">
+  primero se separa la cadena usando split, se obtiene un arreglo de Strings
+  luego, vamos a recorrer el arreglo de strings, por cada elemento del arreglo
+  vamos a buscar un numero. Se extrae el numero, y se almacena en un arreglo de enteros
+  al terminar de recorrer el arreglo de strings, se procede a ordenar el arreglo de enteros con sort
+  Despues de esto, se tiene que recorrer el arreglo de strings junto con el arreglo de enteros
+  y revisar si el elemento entero aparece en el elemento del arreglo de strings y hacerlo 
+  asi hasta ordenar todos, en este caso ir uniendolos en una nueva cadena
+  </p>
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
