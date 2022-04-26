@@ -881,6 +881,12 @@ console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
 
 <p>Obteniendo como respuesta: <strong>'Alex, Jacob and 2 others likes this'</strong></p>
 
+## Bit Counting exercise
+
+<p align="jsutify">Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.</p>
+
+
+<p align="jsutify">Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case</p>
 
 
 
@@ -896,11 +902,9 @@ console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
 
 
 
-
-
-
-
-
+<p align="jsutify"></p>
+<p align="jsutify"></p>
+<p align="jsutify"></p>
 <p align="jsutify"></p>
 <p align="jsutify"></p>
 
