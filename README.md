@@ -919,23 +919,99 @@ console.log(countBits(1234))
 
 <p>Obteniendo como respuesta: <strong>5</strong></p>
 
+## Your Order, Please exercise
 
+<p align="justify">Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.</p>
+<p align="justify">Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).</p>
+<p align="justify">If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers.</p>
 
+Función a completar:
 
+```javascript
+function order(words){
+  // ...
+}
+```
 
+<p align="justify">A partir de una entrada (cadena), se solicita que se ordene la cadena, en la cadena vienen palabras con un numero entre las palabras, estos números van del 1 al 9, de manera consecutiva, si la cadena viene vacia, se retorna una cadena vacia, Los pasos para realizar el algoritmo es el siguiente:</p>
 
+<ol>
+	<li>Se separa la cadena usando split, el elemento separador es un espacio, se obtiene un arreglo de Strings.</li>
+	<li>Se recorre el arreglo de Strings, por cada elemento del arreglo se busca un número.</li>
+	<li>Si el numero existe dentro de la cadena, se extrae el número y se arregla en un arreglo de enteros.</li>
+	<li>Al terminar de recorrer el arreglo de Strings, se procede a ordenar con el método sort.</li>
+	<li>Luego, se debe de recorrer el arreglo de enteros junto con el arreglo de Strings.</li>
+	<li>Revisando si el elemento entero aparece en el elemento del arreglo de Strings, en el caso de aparecer, se almacena en otro arreglo.</li>
+	<li>Al final, el arreglo nuevo, contiene las cadenas de Strings ordenadas, como último paso, se usa el método join para unir las cadenas.</li>
+</ol>
 
+Obteniendo así la siguiente función:
+```javascript
+function order(words){
+  
+  if(words == "") return ""
+  
+  enteros = []
+  words = words.split(" ")
+  for (let i = 0; i < words.length; i++) {
+      cadena = words[i]
+      for (let j = 0; j < cadena.length; j++) {
+          switch (cadena[j]) {
+              case '1':
+                  enteros.push(Number(cadena[j]));
+                  break;
+              case '2':
+                 enteros.push(Number(cadena[j]));
+                  break;
+              case '3':
+                  enteros.push(Number(cadena[j]));
+                  break;
+              case '4':
+                  enteros.push(Number(cadena[j]));
+                  break;
+              case '5':
+                  enteros.push(Number(cadena[j]));
+                  break;
+              case '6':
+                  enteros.push(Number(cadena[j]));
+                  break;
+              case '7':
+                  enteros.push(Number(cadena[j]));
+                  break;
+              case '8':
+                  enteros.push(Number(cadena[j]));
+                  break;
+              case '9':
+                  enteros.push(Number(cadena[j]));
+                  break;
+          }
+      }
+  }
+  enteros.sort();
+  words2 = []
+  for (let i = 0; i < enteros.length; i++) {
+      entero_str = ""+enteros[i]
+      for (var j = 0; j < words.length; j++) {
+          if(words[j].includes(entero_str)){
+              words2.push(words[j])
+          }
+      }
+  }
+  words2 = words2.join(" ")
+  return words2
+  
+}
+```
 
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
 
-<p align="justify">
-  primero se separa la cadena usando split, se obtiene un arreglo de Strings
-  luego, vamos a recorrer el arreglo de strings, por cada elemento del arreglo
-  vamos a buscar un numero. Se extrae el numero, y se almacena en un arreglo de enteros
-  al terminar de recorrer el arreglo de strings, se procede a ordenar el arreglo de enteros con sort
-  Despues de esto, se tiene que recorrer el arreglo de strings junto con el arreglo de enteros
-  y revisar si el elemento entero aparece en el elemento del arreglo de strings y hacerlo 
-  asi hasta ordenar todos, en este caso ir uniendolos en una nueva cadena
-  </p>
+```javascript
+console.log(order("4of Fo1r pe6ople g3ood th5e the2"));
+```
+
+<p>Obteniendo como respuesta: <strong>'Fo1r the2 g3ood 4of th5e pe6ople'</strong></p>
+
+	
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
