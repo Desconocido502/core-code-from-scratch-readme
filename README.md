@@ -836,7 +836,7 @@ console.log(persistence(999));
 
 # Monday 25-04-2022
 
-## Who likes it?
+## Who likes it? exercise
 
 <p align="jsutify">You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.</p>
 
@@ -883,10 +883,41 @@ console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
 
 ## Bit Counting exercise
 
-<p align="jsutify">Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.</p>
+<p align="justify">Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.</p>
 
 
-<p align="jsutify">Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case</p>
+<p align="justify">Example: The binary representation of 1234 is 10011010010, so the function should return 5 in this case</p>
+
+
+<p align="justify">Se nos solicita que a partir de un número entero como argumento, devuelva el número de bits del numero entero.</p>
+<p align="justify">En otras palabras, al momento de ingresar el número, se necesita que se retorne la suma de los digitos del número, pero el número se tiene que convertir primero a binario, luego de esto ya se pueden sumar cada uno de los digitos, retornar la suma</p>
+
+<p align="justify">Explicando paso a paso, se tiene:</p>
+<ol>
+	<li>Primero se convierte el número en binario usando toString, y luego se separa y se vuelve un arreglo de Strings, usando split.</li>
+	<li>Luego, se hara uso del método reduce, la cual viene siendo una función reductora, sobre cada elemento de un arreglo. Devuelve un solo valor.</li>
+	<li>Por último, retornamos el valor dado.</li>
+</ol>
+
+Obteniendo asi, la siguiente función:
+
+```javascript
+var countBits = function(n) {
+    n = n.toString(2).split("")
+    const sum_binaria = n.reduce((pv,cv) => 
+        parseInt(pv) + parseInt(cv)
+    );
+    return sum_binaria
+};
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(countBits(1234))
+```
+
+<p>Obteniendo como respuesta: <strong>5</strong></p>
 
 
 
@@ -896,17 +927,11 @@ console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
 
 
 
-
-
-
-
-
-
-<p align="jsutify"></p>
-<p align="jsutify"></p>
-<p align="jsutify"></p>
-<p align="jsutify"></p>
-<p align="jsutify"></p>
+<p align="justify"></p>
+<p align="justify"></p>
+<p align="justify"></p>
+<p align="justify"></p>
+<p align="justify"></p>
 
 
 
