@@ -834,8 +834,70 @@ console.log(persistence(999));
 
 <p>Obteniendo como respuesta: <strong>4</strong></p>
 
+# Monday 25-04-2022
+
+## Who likes it?
+
+<p align="jsutify">You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.</p>
+
+<p align="jsutify">Implement the function which takes an array containing the names of people that like an item. It must return the display text as shown in the examples:</p>
+
+<p align="justify">Se nos solicita que a partir de un argumento(en este caso un arreglo), Se debe devolver un texto a la pantalla.</p>
+<p align="jsutify">Esto se realizará haciendo uso de las template Strings, estas son usadas para que la respuesta de un texto sea más dinámico.</p>
+<p align="jsutify">Se poseen 4 casos, los cuales los abarcaremos con la estructura if-else.</p>
+
+<ul>
+	<li>El caso donde no venga nada en el arreglo, se retorna como respuesta: "no one likes this"</li>
+	<li>El caso donde viene un elemento en el arreglo, se retorna como respuesta: El primer elemento + "likes this"</li>
+	<li>El caso donde viene dos elementos en el arreglo, se retorna como respuesta:El primer elemento + "and" + segundo elemento + "like this"</li>
+	<li>El caso donde viene tres elementos en el arreglo, se retorna como respuesta:El primer elemento + "," + segundo elemento + "and" Tercer elemento + "like this"</li>
+	<li>El caso donde viene mas o igual a cuatro elementos en el arreglo, se retorna como respuesta: El primer elemento + "," + segundo elemento + "and" + el largo del arreglo menos dosd + "others likes this"</li>
+</ul>
+
+En la parte de arriba lo trabajamos con comillas dobles, pero en la siguiente función ya se hace uso de las plantillas literales:
+```javascript
+function likes(names) {
+  
+  if(names.length == 0){
+      return "no one likes this"
+  }
+  else if(names.length == 1){
+      return `${names[0]} likes this`
+  }else if(names.length == 2){
+      return `${names[0]} and ${names[1]} like this`
+  }else if(names.length == 3){
+      return `${names[0]}, ${names[1]} and ${names[2]} likes this`
+  }else{
+      return `${names[0]}, ${names[1]} and ${names.length-2} others likes this`
+  }
+}
+```
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p align="jsutify"></p>
+<p align="jsutify"></p>
 
 
 
