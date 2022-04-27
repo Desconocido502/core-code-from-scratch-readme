@@ -1184,6 +1184,11 @@ console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
 
 <p>Obteniendo como respuesta: <strong>'HEY JUDE'</strong></p>
 
+# Wednesday 27-04-2022
+
+## Simple Pig Latin exercise
+
+<p align="justify">Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.</p>
 
 
 <p align="justify"></p>
