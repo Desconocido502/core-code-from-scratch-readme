@@ -1011,7 +1011,56 @@ console.log(order("4of Fo1r pe6ople g3ood th5e the2"));
 
 <p>Obteniendo como respuesta: <strong>'Fo1r the2 g3ood 4of th5e pe6ople'</strong></p>
 
+# Tuesday 26-04-22
+
+## Simple Pig Latin exercise
+
+<p align="justify">Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.</p>
+
+<p align="justify"> A partir de una cadena como argumento, se solicita tomar la primera letra de cada palabra y moverla al final de la misma, y agregarle un 'ay' a cada palabra, en caso de que venga un signo de puntuación, se deja en el mismo lugar y no se hace nada.</p>
 	
+Los signos de puntuación son los siguientes: '.',',',';','(',')','[',']','{','}','¿','?','!','¡'
+
+<ul>
+	<li>Primero, se separa la cadena en palabras, haciendo uso del meotodo split.</li>
+	<li>Se crea un arreglo de signos de puntuacion, y se declaran variables, extras a usar(cadena, aux).</li>
+	<li>Se recorre el arreglo de Strings, y preguntamos si la palabra no se incluye en el arreglo de signos de puntuacion.</li>
+	<li>Si no se incluye, entonces, tomamos el primer valor de la palabra osea la primera letra, y la almacenamos en aux.</li>
+	<li>Luego de esto, en cadena se almacena la palabra pero, recortada, osea se le quita la primera letra.</li>
+	<li>Despues, a la cadena de Strings en la i-ésima posición se le almacena, la cadena, el aux y el 'ay'.</li>
+	<li>Al terminar de recorrer el arreglo, se une con el metodo join, propio de js, y se retorna como una cadena.</li>
+</ul>
+
+Obteniendo así la siguiente función:
+
+```javascript
+function pigIt(str){
+    str = str.split(' ');
+    let signos = ['.',',',';','(',')','[',']','{','}','¿','?','!','¡'];
+    let cadena ='', aux = '';
+    for (let i = 0; i < str.length; i++) {
+        if(!signos.includes(str[i])){
+            aux = str[i][0];
+            cadena = str[i].slice(1);
+            str[i] = cadena + aux + 'ay';
+        }
+    }
+    str = str.join(' ')
+    return str
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(pigIt('Hello world !'));
+```
+
+<p>Obteniendo como respuesta: <strong>'igPay atinlay siay oolcay'</strong></p>
+
+<p align="justify"></p>
+<p align="justify"></p>
+<p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
