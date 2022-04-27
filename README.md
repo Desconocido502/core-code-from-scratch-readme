@@ -1093,7 +1093,7 @@ function cuantasVecesAparece(cadena, caracter){
 }
 ```
 
-Funcion completa:
+Función completa:
 
 ```javascript
 function duplicateCount(text) {
@@ -1122,6 +1122,69 @@ console.log(duplicateCount("Indivisibilities"));
 ```
 
 <p>Obteniendo como respuesta: <strong>2</strong></p>
+
+## Decode The Morse Code exercise
+
+<p align="justify">In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded by voice and digital data communication channels, it still has its use in some applications around the world.</p>
+
+<p align="justify">The Morse code encodes every character as a sequence of "dots" and "dashes". For example, the letter A is coded as ·−, letter Q is coded as −−·−, and digit 1 is coded as ·−−−−. The Morse code is case-insensitive, traditionally capital letters are used. When the message is written in Morse code, a single space is used to separate the character codes and 3 spaces are used to separate words. For example, the message HEY JUDE in Morse code is ···· · −·−−   ·−−− ··− −·· ·.</p>
+
+<p align="justify">Se nos solicita, que a partir de una cadena como argumento, se pase de código en morse, a los caracteres que una persona normal pueda leer.</p>
+
+<ul>
+	<li>Lo primero que haremos es limpiar la cadena de espacios vacios, al final y al inicio de la cadena con código morse.</li>
+	<li>Al terminar de limpiar con el método trim, le añademos un espacio al final de la cadena, esto servíra para el proceso de separar los caracteres.</li>
+	<li>Con un while, vamos a recorrer desde 0 hasta el largo de la cadena, para hacer la respectiva separación de los códigos morse.</li>
+	<li>Dentro del while, preguntamos, si el caracter en la i-ésima es igual a un punto o igual a un guion. En caso de ser asi se concatena a una cadena de texto, previamente declarada.</li>
+	<li>Después de preguntar esto, preguntamos si el caracter en la i-ésima posición es igual a un espacio, en caso de serlo, se agrega el contenido de la cadena de texto, a un arreglo, y se limpia la cadena de texto.</li>
+	<li>Luego, pregunta nuevamente si si el caracter en la i-ésima posición +1 y si el caracter en la i-ésima posición +2 es igual a un espacio, en caso de que sea verdad, almacenamos un espacio, dentro del arreglo anterior, y aumentamos en dos el contador del while.</li>
+	<li>Al terminar este proceso, se hace uso del método map, para recorrer los elementos del arreglo anterior, que vendria siendo el arreglo con los códigos morse.</li>
+	<li>dentro del mao, hacemos una validación si el elemento es diferente de un espacio, que retorne el valor del elemento como un caracter legible.</li>
+	<li>En caso de que el elemento sea un espacio, solo se retorna el elemento.</li>
+	<li>Por último, fuera del map, retornamos la cadena descifrada, y lo hacemos por medio del método join.</li>
+</ul>
+
+
+Función completa:
+```javascript
+decodeMorse = function(morseCode){
+  
+  let morse = [],aux = "";
+  let i = 0;
+  morseCode = morseCode.trim() + ' '
+  while (i < morseCode.length) {
+    if (morseCode[i] === "." || morseCode[i] === "-") aux += morseCode[i];
+
+    if (morseCode[i] === " ") {
+      morse.push(aux);
+      aux = "";
+      if (morseCode[i + 1] === " " && morseCode[i + 2] === " ") {
+        morse.push(" ");
+        i += 2;
+      }
+    }
+    i++;
+  }
+  const message = morse.map(element => {
+    if(element !== ' '){
+      return MORSE_CODE[element]
+    }else{
+      return element
+    }
+  });
+  return message.join('');
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
+```
+
+<p>Obteniendo como respuesta: <strong>'HEY JUDE'</strong></p>
+
+
 
 <p align="justify"></p>
 <p align="justify"></p>
