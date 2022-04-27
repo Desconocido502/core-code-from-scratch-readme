@@ -1060,9 +1060,69 @@ console.log(pigIt('Hello world !'));
 
 ## Counting Duplicates exercise
 
-<p align="justify">Escriba una función que devuelva el recuento de caracteres alfabéticos y dígitos numéricos distintos que no distinguen entre mayúsculas y minúsculas que aparecen más de una vez en la cadena de entrada. Se puede suponer que la cadena de entrada contiene solo letras (tanto mayúsculas como minúsculas) y dígitos numéricos.</p>
+<p align="justify">Write a function that will return the count of distinct case-insensitive alphabetic characters and numeric digits that occur more than once in the input string. The input string can be assumed to contain only alphabets (both uppercase and lowercase) and numeric digits.</p>
 
-<p align="justify"></p>
+Función a completar:
+
+```javascript
+function duplicateCount(text){
+  //...
+}
+```
+
+<p align="justify">Bien, para solucionar el problema se nos indica que a partir de una cadena como argumento, se devuelva la cantidad de caracteres que aparecen más de una vez en la cadena de entrada.</p>
+
+<ul>
+	<li>Se vuelven todos los caracteres en minusculas, se separan por medio de split, se ordenan, y se vuelven a juntar con el método join.</li>
+	<li>Lugo de esto, filtramos las palabras que esten repetidas, quedandonos con un nuevo arreglo sin caracteres repetidos.</li>
+	<li>Se empueza a recorrer este nuevo arreglo sin caracteres repetidos, y se manda a llamar a una función extra.</li>
+	<li>La función extra se encarga de contar cuantas veces aparece un caracter dentro de una cadena, y devolver el contador</li>
+	<li>tras esto, vamos a preguntar si el contador posee una cantidad mayor a 1, en caso de que sea verdad, el contador global crecerá.</li>
+	<li>Al terminar de recorrer el arreglo de caracteres que no se repiten, se retorna el contador global.</li>
+</ul>
+
+Función complementaria
+
+```javascript
+function cuantasVecesAparece(cadena, caracter){
+  var indices = [];
+  for(var i = 0; i < cadena.length; i++) {
+    if (cadena[i] === caracter) indices.push(i);
+  }
+  return indices.length;
+}
+```
+
+Funcion completa:
+
+```javascript
+function duplicateCount(text) {
+  text = text.toLowerCase().split('').sort().join('')
+  let contador = 0, cont_aux = 0;
+  
+  let result = text.split('').filter((item,index)=>{
+    return text.indexOf(item) === index;
+  });
+  console.log(text)
+  for (let i = 0; i < result.length; i++) {
+    cont_aux = cuantasVecesAparece(text, result[i])
+    //console.log(cont_aux)
+    if(cont_aux > 1){
+      contador += 1
+    }
+  }
+  return contador
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(duplicateCount("Indivisibilities"));
+```
+
+<p>Obteniendo como respuesta: <strong>2</strong></p>
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
