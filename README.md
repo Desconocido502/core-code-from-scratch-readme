@@ -1190,7 +1190,26 @@ console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
 
 <p align="justify">Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.</p>
 
+<p align="justify">Se nos solicita validar el orden de los parentesis en una cadena de texto, como argumento, osea que esten ordenados de forma correcta, o que esten escritos bien de manera sintáctica.</p>
 
+<p align="justify">Se hará una implementación de una 'pila', aprovechando el poder que nos brindan los métodos de los arreglos en javascript.</p>
+
+<ol>
+	<li>Se declara un arreglo que nos servirá para actuar emmular la pila, y un indice, para llevar el control de las posiciones en la cadena de texto.</li>
+	<li>Se crea un while, validando que mientra el indice sea menor al largo de la cadena de texto, realice todo lo que se le solicita.</li>
+	<li>Dentro del while, si viene un parentésis de apertura se agrega a la pila. Sino, existen dos opciones:</li>
+	<li>
+		<ol>
+			<li>Que el tamaño de la pila sea cero.</li>
+			<li>Que el tamaño de la pila no sea cero.</li>
+		</ol>
+	</li>
+	<li></li>
+</ol>
+
+
+<p align="justify"></p>
+<p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
