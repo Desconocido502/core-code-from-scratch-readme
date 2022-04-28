@@ -1283,6 +1283,52 @@ console.log(toCamelCase("the-stealth-warrior"));
 
 <p align="justify">Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.</p>
 
+<p align="justify">A partir de un parametro, que puede ser una cadena de texto o un arreglo de números, se nos solicita que se devuelva una lista de elementos sin ningún elemento con el mismo valor uno al lado del otro y conservando el orden original de los elementos.</p>
+
+<ul>
+	<li>En caso de que ingrese un arreglo vacío, se retorna un arreglo vacío.</li>
+	<li>Debemos de preguntar si es un arreglo el que se ingreso por medio del iterable, en caso de que lo sea lo convertimos en una cadena de texto.</li>
+	<li>Se declara un indice dandole como valor inicial 0, una variable aux que almacena la primera posición de la cadena de texto.</li>
+	<li>Se almacena el valor de la variable aux en en el arreglo de result, Comenzamos un bucle while, donde se validaran el resto de instrucciones.</li>
+	<li>Si el aux es diferente de lo que se esta recorriendo en la i-ésima posición, se reasigna a aux el valor de la cadena de texto en la i-ésima posición.</li>
+	<li>El valor que posee aux, se almacenará en el arreglo de result, que es el contendrá los nuevos datos limpios.</li>
+	<li>Después, preguntamos si el primer valor de la cadena no es un número, en caso de que se cumpla, se pasan todos los valores de caracteres a números, ya que solo serán números los que se encuentran en dicho arreglo, y retornamos el arreglo.</li>
+	<li>En caso de que no se cumpla, simplemente retornamos el arreglo result.</li>
+</ul>
+
+Función completada:
+
+```javascript
+var uniqueInOrder = function (iterable) {
+  let result = [];
+  if(iterable.length === 0) return []
+  if (Array.isArray(iterable)) iterable = iterable.join("");
+
+  let i = 0, aux = iterable[0];
+  result.push(aux);
+  while (i < iterable.length) {
+    if(aux != iterable[i]){
+      aux = iterable[i];
+      result.push(aux)
+    }
+    i++
+  }
+  if (!isNaN(result[0])){
+    let = re = []
+    for (let i = 0; i < result.length; i++) re.push(parseInt(result[i]))
+    return re
+  }
+  return result;
+};
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(uniqueInOrder("AAAABBBCCccceeeDAABBB"));
+```
+
+<p>Obteniendo como respuesta: <strong>[ 'A', 'B', 'C', 'c', 'e', 'D', 'A', 'B' ]</strong></p>
 
 <p align="justify"></p>
 <p align="justify"></p>
