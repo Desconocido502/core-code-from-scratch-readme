@@ -1197,13 +1197,13 @@ console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
 <ol>
 	<li>Se declara un arreglo que nos servirá para actuar emmular la pila, y un indice, para llevar el control de las posiciones en la cadena de texto.</li>
 	<li>Se crea un while, validando que mientra el indice sea menor al largo de la cadena de texto, realice todo lo que se le solicita.</li>
-	<li>Dentro del while, si viene un parentésis de apertura se agrega a la pila. Sino, existen dos opciones:</li>
-	<li>
+	<li>Dentro del while, si viene un parentésis de apertura se agrega a la pila. Sino, existen dos opciones:
 		<ol>
 			<li>Que el tamaño de la pila sea cero.</li>
 			<li>Que el tamaño de la pila no sea cero.</li>
 		</ol>
-	</li>
+	</li>	
+	<li></li>
 	<li></li>
 </ol>
 
