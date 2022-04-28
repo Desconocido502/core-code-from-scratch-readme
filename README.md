@@ -1239,6 +1239,50 @@ console.log(validParentheses("())("));
 
 <p>Obteniendo como respuesta: <strong>false</strong></p>
 
+## Convert String To Camel Case exercise
+
+<p align="justify">Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).</p>
+
+<p align="justify">Se nos solicita que a partir de una cadena pasada como argumento, se pase dicha cadena a camelCase, esto quiere decir la notación del camello. Esto quiere decir que luego de la primera palabra escrita las primeras letras del resto del identificador deben ir en mayúsuculas, Ejemplo: miVarible. Esto es una buena práctica en programación0.</p>
+
+<ul>
+	<li>Se necesita saber con que tipo de signo se separan el identficador, en este caso, solo son dos signos: guión('-'), guión bajo('_').</li>
+	<li>Esto se realiza con el método includes, si el identificador incluye guión se le asigna un split con guión sino se le aplica un guión bajo al split como argumento de separación. </li>
+	<li>A partir de aqui se usa el método map que nos devuelve un nuevo arreglo, dentro del mismo, se verificará la primera letra de cada palabra, almacenada en el arreglo se Strings que se realizó al aplicar el método split.</li>
+	<li>La primera palabra dentro de la salida debe estar en mayúsculas solo si la palabra original estaba en mayúsculas, es por esto que dentro de map, se válida que si el indice del elemento es cero no se toque, ya que asi validamos que la primer letra de la primera palabra sea minúscula, o que si ya venía en mayúscula, no tenga cambios. En caso contrario, solamente se quita dicha letra y se reemplaza con la misma letra en mayúsculas.</li>
+	<li>al terminar con map. se retorna el arreglo de strings, pero no sin antes unirlo y volver en una cadena por medio del método join.</li>
+</ul>
+
+Funcíon completada:
+
+```javascript
+function toCamelCase(str){
+    if(str.includes('_')) str = str.split('_')
+    else str = str.split('-')
+    const camelCase = str.map((element, index) => {
+        if(index != 0){
+            if(element.charAt(0) !== element.charAt(0).toUpperCase()){
+                return element[0].toUpperCase() + element.slice(1)
+            }
+        }
+        return element
+    });
+    return camelCase.join('');
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(toCamelCase("the-stealth-warrior"));
+```
+
+<p>Obteniendo como respuesta: <strong>'theStealthWarrior'</strong></p>
+
+
+<p align="justify"></p>
+<p align="justify"></p>
+<p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
