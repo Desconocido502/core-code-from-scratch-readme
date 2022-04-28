@@ -1279,6 +1279,10 @@ console.log(toCamelCase("the-stealth-warrior"));
 
 <p>Obteniendo como respuesta: <strong>'theStealthWarrior'</strong></p>
 
+## Unique In Order exercise
+
+<p align="justify">Implement the function unique_in_order which takes as argument a sequence and returns a list of items without any elements with the same value next to each other and preserving the original order of elements.</p>
+
 
 <p align="justify"></p>
 <p align="justify"></p>
