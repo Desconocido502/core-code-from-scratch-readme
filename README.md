@@ -1203,10 +1203,41 @@ console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
 			<li>Que el tamaño de la pila no sea cero.</li>
 		</ol>
 	</li>	
-	<li></li>
-	<li></li>
+	<li>En caso de que el tamaño de la pila sea cero, se retorna falso, ya que se esperaría que la pila no este vacía.</li>
+	<li>En caso de que el tamaño de la pila <strong>NO</strong> sea cero, es por que dentro de la pila se encuentran los parentésis de apertura, y se deben de quitar, con el método pop.</li>
+	<li>Al terminar de recorrer la cadena, se pregunta nuevamente por el tamaño de la pila, si es cero, es por que sintácticamente, los parentésis venian orenados de forma correcta, por tanto retornando un true.</li>
+	<li>En caso de que la pila no se encuentre vacía, quiere decir que no venían sintácticamente bien ordenados, así retornando un false.</li>
 </ol>
 
+Funcíon completada:
+
+```javascript
+function validParentheses(parens) {
+  let pila = [], i = 0;
+  while (i < parens.length) {
+    if (parens[i] == "(") {
+      pila.push(parens[i]);
+    } else {
+      if (pila.length === 0) {
+        return false;
+      } else {
+        pila.pop();
+      }
+    }
+    i++;
+  }
+  if (pila.length === 0) return true;
+  return false;
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(validParentheses("())("));
+```
+
+<p>Obteniendo como respuesta: <strong>false</strong></p>
 
 <p align="justify"></p>
 <p align="justify"></p>
