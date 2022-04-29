@@ -1336,6 +1336,73 @@ console.log(uniqueInOrder("AAAABBBCCccceeeDAABBB"));
 
 <p align="justify">In this kata you have to write a method that folds a given array of integers by the middle x-times.</p>
 
+<p align="justify">Se nos solicita a partir de dos parámetros, uno que es un arreglo de números y otro que es un valor entero, el cual, indica la cantidad de ejecuciones de plegado tendrá que hacer el método.</p>
+
+<p align="justify">Se nos dice que el arreglo inicial no puede cambiar, y que en caso se mande un arreglo con un solo elemento, que se retorne dicho arreglo.</p>
+
+<ul>
+	<li>Lo primero que hacemos es uso de map, para crear dos nuevos arreglos a partir del arreglo de entrada. uno normal, y otro reverso.</li>
+	<li>Dentro de un while, que es el encargado de verificar si un contador es diferente a la cantidad de vueltas que se pide, trabaje.</li>
+	<li>Se preguntara por el largo del arreglo, en caso de que sea impar, se suman sus valores, exceptuando el valor de enmedio del arreglo.</li>
+	<li>En caso de que si sea impar, se tiene que hacer un nuevo arreglo reverse, que almacenará los mismos datos, solo que al revés del orden que se encontraban originalmente.</li>
+	<li>Lo mismo pasa en caso de que sea par, con la diferencia de que este tipo de arreglos, se tiene que sumar todos los elementos en orden inverso.</li>
+	<li>Cada vez que termine de hacer el nuevo arreglo, aumenta el contador de vueltas, hasta que sea igual al contador run, salimos del while, y retornamos el valor del resultado, que vendría siendo un arreglo.</li>
+</ul>
+
+Función completada:
+```javascript
+function foldArray(array, runs) {
+  let countFolds = 0,
+  aux = [];
+    
+  if (array.length === 1) return array;
+    
+  let result = array.map((element) => element); //Se trabaja con un arreglo diferente
+  let revese = array.map((element) => element); //Se trabaja con un arreglo diferente
+  while (countFolds != runs) {
+    if (result.length % 2 != 0) {
+      //* el largo del arreglo es impar
+      revese = revese.map(element => element).reverse()
+      for (let i = 0; i < result.length; i++) {
+        if(i < Math.ceil((result.length/2)-1)){
+          aux.push(result[i]+revese[i])
+        }else if(i === Math.ceil((result.length/2)-1)){
+          aux.push(result[i])
+          result = aux
+          revese = aux
+          aux = []
+          countFolds += 1;
+          break;
+        }
+      }
+    }else{
+      //* el largo del arreglo es par
+      revese = revese.map(element => element).reverse()
+      for (let i = 0; i < result.length; i++) {
+        if(i < Math.ceil((result.length/2))){
+          aux.push(result[i]+revese[i])
+        }else{
+          result = aux
+          revese = aux
+          aux = []
+          countFolds += 1;
+          break;
+        }
+      }
+    }    
+  }
+  return result;
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(foldArray([ -9, 9, -8, 8, 66, 23 ], 1));
+```
+
+<p>Obteniendo como respuesta: <strong>[ 14, 75, 0 ]</strong></p>
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
