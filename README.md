@@ -1330,6 +1330,12 @@ console.log(uniqueInOrder("AAAABBBCCccceeeDAABBB"));
 
 <p>Obteniendo como respuesta: <strong>[ 'A', 'B', 'C', 'c', 'e', 'D', 'A', 'B' ]</strong></p>
 
+# Thursday 28-04-22
+
+## Fold An Array exercise
+
+<p align="justify">In this kata you have to write a method that folds a given array of integers by the middle x-times.</p>
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
