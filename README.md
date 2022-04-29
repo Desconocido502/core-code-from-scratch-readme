@@ -1403,6 +1403,25 @@ console.log(foldArray([ -9, 9, -8, 8, 66, 23 ], 1));
 
 <p>Obteniendo como respuesta: <strong>[ 14, 75, 0 ]</strong></p>
 
+## Encrypt This! exercise
+
+Encrypt this!
+<p align="justify">You want to create secret messages which can be deciphered by the Decipher this! kata. Here are the conditions:</p>
+
+<ol>
+	<li>Your message is a string containing space separated words.</li>
+	<li>
+		You need to encrypt each word in the message using the following rules:
+		<ul>
+			<li>The first letter must be converted to its ASCII code.</li>
+			<li>The second letter must be switched with the last letter</li>
+		</ul>
+	</li>
+	<li>Keepin' it simple: There are no special characters in the input.</li>
+	
+</ol>
+
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
