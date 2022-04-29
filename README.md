@@ -1421,6 +1421,47 @@ Encrypt this!
 	
 </ol>
 
+<p align="justify">Se nos solicita que a partir de un parámetro que contiene una cadena de texto se codifique un mensaje.</p>
+
+<p align="justify">Las reglas son sencillas, el mensaje es una cadena separada por espacios, para encriptar la información la primera letra debe convertirse a su código ASCII, la segunda letra debe ser intercambiada con la última letra.</p>
+
+<p align="justify">No se menciona esto, pero en caso de que el largo de la palabra en la cadena de texto sea de uno, solo se pasa a código ASCII,y si el largo es de dos, entonces, Solo se transforma a código ASCII la primera palabra, y la segunda letra, se queda como está, tomando en cuenta esto, se realiño la siguiente función:</p>
+
+```javascript
+var encryptThis = function (text) {
+
+  if(text.length === 1) return `${text.charCodeAt(0)}`
+
+  let letter = '', mid_letter = '', final_letter = '';
+  text = text.split(' ')
+  const result = text.map(e => {
+    if (e.length > 2) {
+      letter = e[0].charCodeAt(0)
+      mid_letter = e[1]
+      final_letter = e[e.length-1]
+      e = e.slice(2, e.length-1);
+      e = `${letter}${final_letter}${e}${mid_letter}`
+      return e
+    }else if (e.length === 2) {
+      letter = e[0].charCodeAt(0)
+      return `${letter}${e.slice(1)}`
+    }
+    else{
+      return e.charCodeAt(0)
+    }
+  });
+  console.log(result)
+  return result.join(' ')
+};
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(encryptThis("A wise old owl lived in an oak"));
+```
+
+<p>Obteniendo como respuesta: <strong>'65 119esi 111dl 111lw 108dvei 105n 97n 111ka'</strong></p>
 
 <p align="justify"></p>
 <p align="justify"></p>
