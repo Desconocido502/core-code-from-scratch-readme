@@ -1463,6 +1463,17 @@ console.log(encryptThis("A wise old owl lived in an oak"));
 
 <p>Obteniendo como respuesta: <strong>'65 119esi 111dl 111lw 108dvei 105n 97n 111ka'</strong></p>
 
+## Mission Statement
+
+### Versión en español
+
+<p align="justify">¡¡¡Hola!!!, soy Carlos, estudiante de ingeniería y principiante en desarrollo web, actualmente llevó 4 meses estudiando desarrollo web con HTML, CSS y JavaScript, mi principal meta es convertirme en desarrollador FULL STACK JavaScript, dando soluciones a problemas audio visuales. Además de entender inteligencia artificial para el Frontend, soy responsable con cada tema que aprendo, y humilde para compartir mis conocimientos.</p>
+
+### English version
+
+<p align="justify">Hi!!!, I'm Carlos, engineering student and beginner in web development, currently I've been studying web development with HTML, CSS and JavaScript for 4 months, my main goal is to become a FULL STACK JavaScript developer, giving solutions to audio visual problems. Besides understanding artificial intelligence for Frontend, I am responsible with every topic I learn, and humble to share my knowledge.</p>
+
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
