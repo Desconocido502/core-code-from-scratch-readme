@@ -3,7 +3,7 @@
 ## Indice de Ejercicios realizados por Semana y día
 <ul>
 	<li>
-		<strong>Semana 1</strong>
+		<strong>Week 1</strong>
 		<ul>
 			<li>
 				Tuesday
@@ -33,7 +33,7 @@
 		</ul>
 	</li>
 	<li>
-		<strong>Semana 2</strong>
+		<strong>Week 2</strong>
 		<ul>
 			<li>
 				Tuesday
@@ -65,11 +65,49 @@
 			</li>
 		</ul>
 	</li>
+	<li>
+		<strong>Week 3</strong>
+		<ul>
+			<li>
+				Monday
+				<ul>
+					<li><a href='#who'><strong>Who Likes It? exercise</strong></a></li>
+					<li><a href='#big-counting'><strong>Bit Counting exercise</strong></a></li>
+					<li><a href='#your-order'><strong>Your Order, Please exercise</strong></a></li>
+				</ul>
+			</li>
+			<li>
+				Tuesday
+				<ul>
+					<li><a href='#simple-pig'><strong>Simple Pig Latin exercise</strong></a></li>
+					<li><a href='#counting-duplicates'><strong>Counting Duplicates exercise</strong></a></li>
+					<li><a href='#decode'><strong>Decode The Morse Code exercise</strong></a></li>
+				</ul>
+			</li>
+			<li>
+				Wednesday
+				<ul>
+					<li><a href='#valid-pa'><strong>Valid Parentheses exercise</strong></a></li>
+					<li><a href='#convert-str'><strong>Convert String To Camel Case exercise</strong></a></li>
+					<li><a href='#unique'><strong>Unique In Order exercise</strong></a></li>
+				</ul>
+			</li>
+			<li>
+				Thursday
+				<ul>
+					<li><a href='#fold'><strong>Fold An Array exercise</strong></a></li>
+					<li><a href='#encrypt'><strong>Encrypt This! exercise</strong></a></li>
+					<li><a href='#challenge-1'><strong>Complete your 1st Core Challenge - 100% Completed.</strong></a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
 </ul>
 
 # **Tuesday** 12-05-22
 
 <a name='languages'></a>
+
 ## Interpreted And Compiled Programming Languages
 
 <p align='justify'>Los lenguajes interpretados y compilados sirven para procesar código de alto nivel y pasarlo a bajo nivel para que lo procese la computadora, que entiende 1´s y 0´s.</p>
@@ -949,6 +987,8 @@ console.log(persistence(999));
 
 # Monday 25-04-2022
 
+<a name='who'></a>
+
 ## Who likes it? exercise
 
 <p align="jsutify">You probably know the "like" system from Facebook and other pages. People can "like" blog posts, pictures or other items. We want to create the text that should be displayed next to such an item.</p>
@@ -994,6 +1034,8 @@ console.log(likes(["Alex", "Jacob", "Mark", "Max"]));
 
 <p>Obteniendo como respuesta: <strong>'Alex, Jacob and 2 others likes this'</strong></p>
 
+<a name='big-counting'></a>
+
 ## Bit Counting exercise
 
 <p align="justify">Write a function that takes an integer as input, and returns the number of bits that are equal to one in the binary representation of that number. You can guarantee that input is non-negative.</p>
@@ -1031,6 +1073,8 @@ console.log(countBits(1234))
 ```
 
 <p>Obteniendo como respuesta: <strong>5</strong></p>
+
+<a name='your-order'></a>
 
 ## Your Order, Please exercise
 
@@ -1126,6 +1170,8 @@ console.log(order("4of Fo1r pe6ople g3ood th5e the2"));
 
 # Tuesday 26-04-22
 
+<a name='simple-pig'></a>
+
 ## Simple Pig Latin exercise
 
 <p align="justify">Move the first letter of each word to the end of it, then add "ay" to the end of the word. Leave punctuation marks untouched.</p>
@@ -1170,6 +1216,8 @@ console.log(pigIt('Hello world !'));
 ```
 
 <p>Obteniendo como respuesta: <strong>'igPay atinlay siay oolcay'</strong></p>
+
+<a name='counting-duplicates'></a>
 
 ## Counting Duplicates exercise
 
@@ -1236,6 +1284,8 @@ console.log(duplicateCount("Indivisibilities"));
 
 <p>Obteniendo como respuesta: <strong>2</strong></p>
 
+<a name='decode'></a>
+
 ## Decode The Morse Code exercise
 
 <p align="justify">In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded by voice and digital data communication channels, it still has its use in some applications around the world.</p>
@@ -1299,6 +1349,8 @@ console.log(decodeMorse(".... . -.--   .--- ..- -.. ."));
 
 # Wednesday 27-04-2022
 
+<a name='valid-pa'></a>
+
 ## Valid Parentheses exercise
 
 <p align="justify">Write a function that takes a string of parentheses, and determines if the order of the parentheses is valid. The function should return true if the string is valid, and false if it's invalid.</p>
@@ -1352,6 +1404,8 @@ console.log(validParentheses("())("));
 
 <p>Obteniendo como respuesta: <strong>false</strong></p>
 
+<a name='convert-str'></a>
+
 ## Convert String To Camel Case exercise
 
 <p align="justify">Complete the method/function so that it converts dash/underscore delimited words into camel casing. The first word within the output should be capitalized only if the original word was capitalized (known as Upper Camel Case, also often referred to as Pascal case).</p>
@@ -1391,6 +1445,8 @@ console.log(toCamelCase("the-stealth-warrior"));
 ```
 
 <p>Obteniendo como respuesta: <strong>'theStealthWarrior'</strong></p>
+
+<a name='unique'></a>
 
 ## Unique In Order exercise
 
@@ -1444,6 +1500,8 @@ console.log(uniqueInOrder("AAAABBBCCccceeeDAABBB"));
 <p>Obteniendo como respuesta: <strong>[ 'A', 'B', 'C', 'c', 'e', 'D', 'A', 'B' ]</strong></p>
 
 # Thursday 28-04-22
+
+<a name='fold'></a>
 
 ## Fold An Array exercise
 
@@ -1516,6 +1574,8 @@ console.log(foldArray([ -9, 9, -8, 8, 66, 23 ], 1));
 
 <p>Obteniendo como respuesta: <strong>[ 14, 75, 0 ]</strong></p>
 
+<a name='encrypt'></a>
+
 ## Encrypt This! exercise
 
 Encrypt this!
@@ -1575,6 +1635,8 @@ console.log(encryptThis("A wise old owl lived in an oak"));
 ```
 
 <p>Obteniendo como respuesta: <strong>'65 119esi 111dl 111lw 108dvei 105n 97n 111ka'</strong></p>
+
+<a name='challenge-1'></a>
 
 ## Mission Statement
 
