@@ -32,6 +32,36 @@
 			</li>
 		</ul>
 	</li>
+	<li>
+		<strong>Semana 2</strong>
+		<ul>
+			<li>
+				Tuesday
+				<ul>
+					<li><a href='#languages'><strong>Interpreted And Compiled Programming Languages</strong></a></li>
+					<li><a href='#compiled'><strong>Is Java compiled or interpreted, or both?</strong></a></li>
+					<li><a href='#pseudocode'><strong>Pseudocode Currency Converter</strong></a></li>
+					<li><a href='#high-low-languages'><strong>High and Low level languages</strong></a></li>
+				</ul>
+			</li>
+			<li>
+				Wednesday
+				<ul>
+					<li><a href='#matrix'><strong>Your date of birth in the matrix? exercise</strong></a></li>
+					<li><a href='#mips'><strong>MIPS exercise</strong></a></li>
+				</ul>
+			</li>
+			<li>
+				Thursday
+				<ul>
+					<li><a href='#special-numbers'><strong>Print special numbers exercise</strong></a></li>
+					<li><a href='#badcode-1'><strong>Bad Code exercise</strong></a></li>
+					<li><a href='#badcode-2'><strong>Bad Code 2 exercise</strong></a></li>
+					<li><strong>Follow Git Course - 75% completed</strong>
+				</ul>
+			</li>
+		</ul>
+	</li>
 </ul>
 
 # **Tuesday** 12-05-22
