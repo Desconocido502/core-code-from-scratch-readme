@@ -5,15 +5,22 @@
 	<li>
 		<strong>Semana 1</strong>
 		<ul>
-			<li>Tuesday
-				<ol>
+			<li>
+				Tuesday
+				<ul>
 					<li><a href='#languages'><strong>Interpreted And Compiled Programming Languages</strong></a></li>
 					<li><a href='#compiled'><strong>Is Java compiled or interpreted, or both?</strong></a></li>
 					<li><a href='#pseudocode'><strong>Pseudocode Currency Converter</strong></a></li>
 					<li><a href='#high-low-languages'><strong>High and Low level languages</strong></a></li>
-				</ol>
+				</ul>
 			</li>
-			<li>Wednesday</li>
+			<li>
+				Wednesday
+				<ul>
+					<li><a href='#matrix'><strong>Your date of birth in the matrix? exercise</strong></a></li>
+					<li><a href='#mips'><strong>MIPS exercise</strong></a></li>
+				</ul>
+			</li>
 			<li>Thursday</li>
 		</ul>
 	</li>
@@ -85,6 +92,8 @@ Fin
 
 # **Wednesday** 13-05-22
 
+<a name='matrix'></a>
+
 ## Your date of birth in the matrix? exercise
 
 <p align="justify">
@@ -122,6 +131,8 @@ Fin</p>
 |-----|  1   |  1  |  1  |  1  |  1 | 0  |  1 | 0 | 0 | 0 | 0 |
 
 <p align="justify">Obteniendo asi el numero binario de mi fecha de cumpleaños (2000) en binario: <strong>11111010000</strong>.</p>
+
+<a name='mips'></a>
 
 ## MIPS
 ### 1.Create a program that adds any two given numbers provided by the user.
