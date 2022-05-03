@@ -1,6 +1,12 @@
 # core-code-from-scratch-readme
 
-# **Tuesday**
+## Indice de Ejercicios realizados por Semana y día
+<ul>
+	<li>Semana 1</li>
+</ul>
+
+<a name='martes-1'></a>
+# **Tuesday** 12-05-22
 
 ## Interpreted And Compiled Programming Languages
 
@@ -57,7 +63,7 @@ Fin
 
 <p align="justify">Los lenguajes de bajo nivel, son los que contienen menos abstracción, y que son más cercanos al lenguaje máquina.</p>
 
-# **Wednesday**
+# **Wednesday** 13-05-22
 
 ## Your date of birth in the matrix? exercise
 
@@ -156,7 +162,7 @@ Fin</p>
 ```
 <p align="justify">Fin del programa un nombre en una cadena en MIPS, <br/>(Lenguaje de bajo nivel - Assembler)</p><br/>
 
-# **Thursday**
+# **Thursday** 14-05-22
 
 <p align="justify">1. In this exercise you must use an iterative flow control to be able to print all the even numbers in the range of numbers from 0 to 100. Remember that you should not print each number, you should use a flow control structure to perform the exercise.</p>
 
