@@ -1716,7 +1716,7 @@ console.log(items);
 // 1 : 3
 ``` 
 
-<p align="justify">A grandes rasgos, puede parecer algo confuso, pero en realidad no lo es tanto, lo primero que hacemos es, filtrar los números que sean mayor o igaul a 0, descartando los números negativos del arreglo, seguidamente, el map se encarga de retonar un objeto literal al arreglo con los valores que cumplieron la condición de no ser números negativos, luego se vuelve a filtrar los objetos literales del arreglo, en los cuales su valor tiene que ser mayor a uno para poder ser nuevamente almacenador y por último, se llama a map para retornar únicamente sus valores, y no a la key, así solo almacenando los valores en el arreglo. Por ende al imprimir los datos del arreglo items, nos muestra:</p>
+<p align="justify">A grandes rasgos, puede parecer algo confuso, pero en realidad no lo es tanto, lo primero que hacemos es, filtrar los números que sean mayor o igual a 0, descartando los números negativos del arreglo, seguidamente, el map se encarga de retonar un objeto literal al arreglo con los valores que cumplieron la condición de no ser números negativos, luego se vuelve a filtrar los objetos literales del arreglo, en los cuales su valor tiene que ser mayor a uno para poder ser nuevamente almacenador y por último, se llama a map para retornar únicamente sus valores, y no a la key, así solo almacenando los valores en el arreglo. Por ende al imprimir los datos del arreglo items, nos muestra:</p>
 
 Salida:
 ```javascript
