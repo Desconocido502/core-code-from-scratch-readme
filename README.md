@@ -3,7 +3,7 @@
 ## Indice de Ejercicios realizados por Semana y día
 <ul>
 	<li>
-		Semana 1
+		<a href='#martes-1'><strong>Semana 1</strong></a>
 		<ul>
 			<li>Tuesday</li>
 			<li>Wednesday</li>
