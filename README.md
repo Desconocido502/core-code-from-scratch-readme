@@ -38,10 +38,11 @@
 			<li>
 				Tuesday
 				<ul>
-					<li><a href='#languages'><strong>Interpreted And Compiled Programming Languages</strong></a></li>
-					<li><a href='#compiled'><strong>Is Java compiled or interpreted, or both?</strong></a></li>
-					<li><a href='#pseudocode'><strong>Pseudocode Currency Converter</strong></a></li>
-					<li><a href='#high-low-languages'><strong>High and Low level languages</strong></a></li>
+					<li><a href='#multiply'><strong>Multiply exercise</strong></a></li>
+					<li><a href='#ascii'><strong>ASCII Total exercise</strong></a></li>
+					<li><a href='#char-ascii'><strong>Char From ASCII Value exercise</strong></a></li>
+					<li><a href='#binary'><strong>Binary Addition exercise</strong></a></li>
+					<li><a href='#final-grade'><strong>Student's Final Grade exercise</strong></a></li>
 				</ul>
 			</li>
 			<li>
@@ -351,6 +352,8 @@ if (n == 100) {
 
 # **Tuesday** 19-04-2022
 
+<a name='multiply'></a>
+
 ## Multiply
 This code does not execute properly. Try to figure out why.
 
@@ -368,6 +371,8 @@ function multiply(a, b){
   return a * b
 }
 ```
+<a name='ascii'></a>
+
 ## ASCII Total
 <p align="justify">You'll be given a string, and have to return the sum of all characters as an int. The function should be able to handle all ASCII characters.</p>
 Función a completar:
@@ -406,6 +411,8 @@ uniTotal("Mary Had A Little Lamb")
 
 <p>Obteniendo como respuesta: <strong>1873</strong></p>
 
+<a name='char-ascii'></a>
+
 ## Char From ASCII Value
 
 <p align="justify">Write a function get_char() / getChar() which takes a number and returns the corresponding ASCII char for that value.</p>
@@ -439,6 +446,7 @@ getChar(65)
 
 <p>Obteniendo como respuesta: <strong>'A'</strong></p>
 
+<a name='binary'></a>
 
 ## Binary Addition
 
@@ -471,6 +479,8 @@ addBinary(5,9)
 ```
 
 <p>Obteniendo como respuesta: <strong>'1110'</strong></p>
+
+<a name='final-grade'></a>
 
 ## Student's Final Grade
 
