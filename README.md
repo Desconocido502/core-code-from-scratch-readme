@@ -5,7 +5,14 @@
 	<li>
 		<a href='#martes-1'><strong>Semana 1</strong></a>
 		<ul>
-			<li>Tuesday</li>
+			<li>Tuesday
+				<ol>
+					<li><a href='#languages'><strong>Interpreted And Compiled Programming Languages</strong></a></li>
+					<li><a href='#compiled'><strong>Is Java compiled or interpreted, or both?</strong></a></li>
+					<li><a href='#pseudocode'><strong>Pseudocode Currency Converter</strong></a></li>
+					<li><a href='#high-low-languages'><strong>High and Low level languages</strong></a></li>
+				</ol>
+			</li>
 			<li>Wednesday</li>
 			<li>Thursday</li>
 		</ul>
@@ -15,6 +22,7 @@
 <a name='martes-1'></a>
 # **Tuesday** 12-05-22
 
+<a name='languages'></a>
 ## Interpreted And Compiled Programming Languages
 
 <p align='justify'>Los lenguajes interpretados y compilados sirven para procesar código de alto nivel y pasarlo a bajo nivel para que lo procese la computadora, que entiende 1´s y 0´s.</p>
@@ -49,9 +57,13 @@
 |    C++   |    PHP      | Python |
 |    Go    | ----------- |   C#   |
 
+<a name='compiled'></a>
+
 ## Is Java compiled or interpreted, or both?
 
 <p align="justify">Java es tanto lenguaje compilado como lenguaje interpretado ya que Java cuenta con un entorno de ejecución que lee el lenguaje compilado (ByteCode) y que luego es interpretado por la Java Virtual Machine(JVM). El interprete con que cuenta Java es diferente a cualquier otro, ya que lo que interpreta es el código de bytes, y no un código de lenguaje máquina. Tambíen según el entorno el código de bytes, puede ser compilado con anticipación, compilado justo a tiempo, interpretado o ser ejecutado directamente por un procesador compatible.</p>
+
+<a name='pseudocode'></a>
 
 ## Pseudocode Currency Converter exercise
 ```
@@ -64,6 +76,8 @@ Inicio
   Imprimir: "Los"+valorEntrada+"dólares en Bitcoin son: "+valorSalida+" BTC"
 Fin
 ```
+
+<a name='high-low-languages'></a>
 ## Learn about High and Low level languajes
 
 <p align="justify">Los lenguajes de alto nivel, permiten que una persona pueda programar con una sintaxis parecida a la de los humanos, osea que abstrae todo el proceso de traducir el programa y deja que la persona escriba su programa con una sintaxis parecida a la de los humanos.</p>
