@@ -21,7 +21,15 @@
 					<li><a href='#mips'><strong>MIPS exercise</strong></a></li>
 				</ul>
 			</li>
-			<li>Thursday</li>
+			<li>
+				Thursday
+				<ul>
+					<li><a href='#special-numbers'><strong>Print special numbers exercise</strong></a></li>
+					<li><a href='#badcode-1'><strong>Bad Code exercise</strong></a></li>
+					<li><a href='#badcode-2'><strong>Bad Code 2 exercise</strong></a></li>
+					<li><strong>Follow Git Course - 75% completed</strong>
+				</ul>
+			</li>
 		</ul>
 	</li>
 </ul>
@@ -195,6 +203,10 @@ Fin</p>
 
 # **Thursday** 14-05-22
 
+<a name='special-numbers'></a>
+
+##Print special numbers
+
 <p align="justify">1. In this exercise you must use an iterative flow control to be able to print all the even numbers in the range of numbers from 0 to 100. Remember that you should not print each number, you should use a flow control structure to perform the exercise.</p>
 
 ### Solución:
@@ -236,7 +248,9 @@ Asi obteniendo el mismo resultado para las tres formas de obtener los numeros pa
 
 <p align="justify">2. The code shown below is not working in the right way, as a task you must find the error made by the developer who programmed this code and correct it, for this exercise you must explain what the error is and place the correct code.</p>
 
-### Código con error
+<a name='badcode-1'></a>
+
+### Bad Code exercise
 ```javascript
 var cond = false;
 
@@ -260,6 +274,11 @@ if ((cond)) {
   console.log('The cond variable is false');
 }
 ```
+
+<a name='badcode-2'></a>
+
+## Bad Code 2 exercise
+
 <p align="justify">3. You must create the code that follows the following logic, if the given number is 100, take this number as special and show the following message: "This is a special number!", but if the number is less than 1000, multiple of 10 and different from 100, you must show the following message: "This number is almost special". if none of the given conditions are met show the following message: "Just a regular number". Another developer was trying to program the logic, but apparently couldn't, you need to fix the code to work properly.</p>
 
 ## Código incompleto
