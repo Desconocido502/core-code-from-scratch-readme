@@ -48,17 +48,19 @@
 			<li>
 				Wednesday
 				<ul>
-					<li><a href='#matrix'><strong>Your date of birth in the matrix? exercise</strong></a></li>
-					<li><a href='#mips'><strong>MIPS exercise</strong></a></li>
+					<li><a href='#holiday'><strong>Holiday VIII - Duty Free exercise</strong></a></li>
+					<li><a href='#old'><strong>Twice As Old exercise</strong></a></li>
+					<li><a href='#spacing'><strong>Valid Spacing exercise</strong></a></li>
+					<li><a href='#fake-binary'><strong>Fake Binary exercise</strong></a></li>
 				</ul>
 			</li>
 			<li>
 				Thursday
 				<ul>
-					<li><a href='#special-numbers'><strong>Print special numbers exercise</strong></a></li>
-					<li><a href='#badcode-1'><strong>Bad Code exercise</strong></a></li>
-					<li><a href='#badcode-2'><strong>Bad Code 2 exercise</strong></a></li>
-					<li><strong>Follow Git Course - 75% completed</strong>
+					<li><a href='#remove'><strong>Remove All Exclamation Marks From The End Of Sentence exercise</strong></a></li>
+					<li><a href='#vocal-remove'><strong>Vowel Remover exercise</strong></a></li>
+					<li><a href='#rock-paper-scissor'><strong>Rock Paper Scissors! exercise</strong></a></li>
+					<li><a href='#persistent'><strong>Persistent Bugger exercise</strong></a></li>
 				</ul>
 			</li>
 		</ul>
@@ -542,6 +544,8 @@ finalGrade(85,5)
 
 # **Wednesday** 20-04-2022
 
+<a name='holiday'></a>
+
 ## Holiday VIII - Duty Free exercise
 
 <p align="justify">The purpose of this kata is to work out just how many bottles of duty free whiskey you would have to buy such that the saving over the normal high street price would effectively cover the cost of your holiday.</p>
@@ -591,6 +595,8 @@ dutyFree(24,35,3000)
 
 <p>Obteniendo como respuesta: <strong>357</strong></p>
 
+<a name='old'></a>
+
 ## Twice As Old exercise
 
 Your function takes two arguments:
@@ -636,6 +642,8 @@ twiceAsOld(36,7)
 ```
 
 <p>Obteniendo como respuesta: <strong>22</strong></p>
+
+<a name='spacing'></a>
 
 ## Valid Spacing exercise
 
@@ -692,6 +700,8 @@ validSpacing('Hello  world')
 
 <p>Obteniendo como respuesta: <strong>false</strong></p>
 
+<a name='fake-binary'></a>
+
 ## Fake Binary exercise
 
 <p align="justify">Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.</p>
@@ -732,6 +742,8 @@ console.log(fakeBin('45385593107843568'))
 <p>Obteniendo como respuesta: <strong>01011110001100111</strong></p>
 
 # Thursday 21-04-2022
+
+<a name='remove'></a>
 
 ## Remove All Exclamation Marks From The End Of Sentence exercise
 
@@ -787,6 +799,8 @@ console.log(remove("!hi!!!"))
 
 <p>Obteniendo como respuesta: <strong>"!Hi"</strong></p>
 
+<a name='vocal-remove'></a>
+
 ## Vowel Remover exercise
 
 <p align="justify">Create a function called shortcut to remove the lowercase vowels (a, e, i, o, u ) in a given string.</p>
@@ -832,6 +846,7 @@ console.log(shortcut("goodbye"))
 
 <p>Obteniendo como respuesta: <strong>'gdby'</strong></p>
 
+<a name='rock-paper-scissor'></a>
 
 ## Rock Paper Scissors! exercise
 
@@ -882,6 +897,8 @@ console.log(rps('scissors','paper'));
 ```
 
 <p>Obteniendo como respuesta: <strong>'Player 1 won!'</strong></p>
+
+<a name='persistent'></a>
 
 ## Persistent Bugger exercise
 
