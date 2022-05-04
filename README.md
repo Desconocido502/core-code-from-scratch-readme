@@ -1724,6 +1724,24 @@ Salida:
 1 : 3
 ``` 
 
+# Wednesday 04-05-2022
+
+## Simple Validation Of A Username exercise
+
+<p align="justify">Write a simple regex to validate a username. Allowed characters are:</p>
+
+<ul>
+	<li>lowercase letters,</li>
+	<li>numbers,</li>
+	<li>underscore</li>
+</ul>
+
+<p align="justify">Length should be between 4 and 16 characters (both included).</p>
+
+
+<p align="justify"></p>
+<p align="justify"></p>
+<p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
