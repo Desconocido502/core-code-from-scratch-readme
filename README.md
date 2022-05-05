@@ -1839,6 +1839,24 @@ console.log(stringClean('My \"me3ssy\" d8ata issues2! Will1 th4ey ever, e3ver be
 
 <p>Obteniendo como respuesta: <strong>'My "messy" data issues! Will they ever, ever be solved?'</strong></p>
 
+## Password Validation exercise
+
+<p align="justify">You need to write regex that will validate a password to make sure it meets the following criteria:</p>
+
+<ul>
+	<li>At least six characters long</li>
+	<li>contains a lowercase letter</li>
+	<li>contains an uppercase letter</li>
+	<li>contains a number</li>
+</ul>
+
+<p align="justify">Valid passwords will only be alphanumeric characters.</p>
+
+<p align="justify"></p>
+
+
+
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
