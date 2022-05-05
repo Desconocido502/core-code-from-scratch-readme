@@ -1852,11 +1852,27 @@ console.log(stringClean('My \"me3ssy\" d8ata issues2! Will1 th4ey ever, e3ver be
 
 <p align="justify">Valid passwords will only be alphanumeric characters.</p>
 
+<p align="justify">Bien se nos solicita que a partir de una cadena como entrada (parámetro), se valide que la cadena sea una contraseña válida, y nos pide requisitos para que sea válida, tiene que tener al menos 6 carácteres, debe contener una letra minúscula, una mayúscula, y contiene un número, además de las contraseñas solo serán validas con carácteres alfanuméricos únicamente. Para estos casos se prefirió hacer las 3 validaciones aparte y la validación de al menos 6 carácteres, obteniendo la siguiente función:</p>
+
+```javascript
+function validate(password) {
+  return /^\w{6,}$/.test(password) 
+  && /[a-z]{1}/.test(password) 
+  && /[A-Z]{1}/.test(password)
+  && /\d{1}/.test(password);
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(validate('Password123'));
+```
+
+<p>Obteniendo como respuesta: <strong>true</strong></p>
+
+
 <p align="justify"></p>
-
-
-
-
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
