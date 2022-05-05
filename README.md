@@ -1776,6 +1776,13 @@ console.log(validateUsr('Hasd_12assssssasasasasasaasasasasas'));
 
 <p>Obteniendo como respuesta: <strong>false</strong></p>
 
+## Get Number From String exercise
+
+<p align="justify">Write a function which removes from string all non-digit characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56</p>
+
+
+
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
