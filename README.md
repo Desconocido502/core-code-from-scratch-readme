@@ -1807,6 +1807,15 @@ console.log(getNumberFromString('"hell5o wor6ld"'));
 
 <p>Obteniendo como respuesta: <strong>56</strong></p>
 
+# Thursday 05-05-2022
+
+## String Cleaning exercise
+
+<p align="justify">Your boss decided to save money by purchasing some cut-rate optical character recognition software for scanning in the text of old novels to your database. At first it seems to capture words okay, but you quickly notice that it throws in a lot of numbers at random places in the text.</p>
+
+<p align="justify"></p>
+
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
