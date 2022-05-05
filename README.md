@@ -1780,8 +1780,32 @@ console.log(validateUsr('Hasd_12assssssasasasasasaasasasasas'));
 
 <p align="justify">Write a function which removes from string all non-digit characters and parse the remaining to number. E.g: "hell5o wor6ld" -> 56</p>
 
+<p align="justify">Se nos solicita que a parir de una cadena de texto como entrada (parámetro), y retornar solo los valores númericos. Bien para esto, lo que haremos es hacer uso de una expresión regular, para encontrar los números. Las reglas son las siguientes</p>
 
+<ul>
+	<li>0-9: Digitos del 0 al 9, ejemplo: 502</li>
+	<li>+: Un cuantificador que indica que puede venir una o más veces alguna regex o algún carácter.</li>
+</ul>
 
+<p align="justify">Tambíen se uso la bandera g, que nos proporciona JavaScript, para indicar que sea una búsqueda global, osea sobre toda la cadena de texto que se encontrará bajo análisis. Así obteniendo la siguiente regex:</p>
+
+<p align="center">/\d+/g</p>
+
+Completando la función, queda lo siguiente:
+
+```javascript
+function getNumberFromString(s) {
+    return parseInt(s.match(/\d+/g).join(''))
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(getNumberFromString('"hell5o wor6ld"'));
+```
+
+<p>Obteniendo como respuesta: <strong>56</strong></p>
 
 <p align="justify"></p>
 <p align="justify"></p>
