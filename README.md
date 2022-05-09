@@ -1871,6 +1871,20 @@ console.log(validate('Password123'));
 
 <p>Obteniendo como respuesta: <strong>true</strong></p>
 
+# Monday 09-05-2022
+
+## Find The Missing Letter exercise
+
+<p align="justify">
+Write a method that takes an array of consecutive (increasing) letters as input and that returns the missing letter in the array.
+</p>
+<p align="justify">
+You will always get an valid array. And it will be always exactly one letter be missing. The length of the array will always be at least 2.
+The array will always contain letters in only one case.</p>
+
+Example:
+
+['a','b','c','d','f'] -> 'e' ['O','Q','R','S'] -> 'P'
 
 <p align="justify"></p>
 <p align="justify"></p>
