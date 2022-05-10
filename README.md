@@ -1886,7 +1886,33 @@ Example:
 
 ['a','b','c','d','f'] -> 'e' ['O','Q','R','S'] -> 'P'
 
-<p align="justify"></p>
+<p align="justify">Se nos solicita que a partir de un arreglo como parámetro, se retorne la letra faltante, para dicho ejercicio se toma en cuenta que una de las restricciones es que son letras consecutivas, esto facilita el problema, y no se vuelve tan complejo.</p>
+
+<p align="justify">Usando el método map, se mapea cada elemento del arreglo de entrada, y retornando el valor a un nuevo arreglo en código ascii o utf-8.</p>
+<p align="justify">A partir de esto, declaramos una variable auxiliar y le asignamos el primer valor del arreglo nuevo. Después utilizando un for-of, empezamos a recorrer el arreglo nuevo, y preguntamos si el elemento de arreglo nuevo es es diferente a la variable auxiliar, en caso de que se cumpla la condición se retorna el valor de la variable aux, pero parseando su valor de un entero a un char, en caso de que no se cumpla la condición solo aumentamos el valor de aux en uno.</p>
+
+Completando la función, queda lo siguiente:
+
+```javascript
+function findMissingLetter(array) {
+  let results = array.map((e) => e.charCodeAt(0)),
+    aux = results[0];
+  for (const result of results) {
+    if (aux !== result) return String.fromCharCode(aux);
+    aux += 1;
+  }
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(findMissingLetter(["O", "Q", "R", "S"]));
+```
+
+<p>Obteniendo como respuesta: <strong>'P'</strong></p>
+
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
