@@ -1983,6 +1983,8 @@ console.log(revrot("563000655734469485", 4));
 
 ## TypeScript Object Type exercise
 
+### Ejercicio 1
+
 <p align="justify">Se nos esta enseñando a como usar los tipos de objetos, hay tres maneras, pueden ser anónimos, por interfaces o de tipo alias</p>
 
 ### Anónimos
@@ -2048,6 +2050,11 @@ export function logPerson(user: User) {
 console.log('Users:');
 users.forEach(logPerson);
 ```
+
+### Ejercicio 2
+
+<p align="justify">Falta el tipo 'persona', definalo y utilicelo en la matriz de personas y la función logPerson para arreglar todos los errores de TS.</p>
+
 
 <p align="justify"></p>
 <p align="justify"></p>
