@@ -2130,7 +2130,7 @@ export function logPerson(person: Person) {
 
 ### Ejercicio 5
 
-<p align="justify">Descubre como ayudar a TypeScript a comprender los tipos en esta situación y aplique las correciones necesarias.</p>
+<p align="justify">Sin duplicar estructuras de tipos, modifique definición de la función filterUsers para que podamos pasar solo aquellos criterios que son necesarios, y no toda la información del usuario como es requerido ahora de acuerdo a escribir Mayor dificultad, excluir 'tipo' de los criterios de filtro.</p>
 
 <p align="justify"></p>
 <p align="justify"></p>
