@@ -2107,6 +2107,12 @@ persons.forEach(logPerson);
  
 <p align="justify">Corregir los errores de tipo logPerson, La función logPerson debe aceptar tanto al usuario como al administrador, y debe generar información relevante de acuerdo con la entrada: ocupación para Usuario y rol Admin.</p>
 
+No entendi mucho, solo verificamos que 'role' este en el objeto de person osea => 'role' in person, y eso lo solucionaba todo, toca leer mas.
+
+ ### Ejercicio 4
+
+<p align="justify"></p>
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
