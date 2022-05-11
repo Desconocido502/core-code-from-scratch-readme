@@ -2113,6 +2113,25 @@ No entendi mucho, solo verificamos que 'role' este en el objeto de person osea =
 
 <p align="justify">Descubre como ayudar a TypeScript a comprender los tipos en esta situación y aplique las correciones necesarias.</p>
 
+<p align="justify">Lo mismo que el ejercicio 3, solo que ahora preguntamos en diferentes if</p>
+
+```typescript
+export function logPerson(person: Person) {
+    let additionalInformation: string = '';
+    if ('role' in person) {
+        additionalInformation = person.role;
+    }
+    if ('occupation' in person) {
+        additionalInformation = person.occupation;
+    }
+    console.log(` - ${person.name}, ${person.age}, ${additionalInformation}`);
+}
+```
+
+### Ejercicio 5
+
+<p align="justify">Descubre como ayudar a TypeScript a comprender los tipos en esta situación y aplique las correciones necesarias.</p>
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
