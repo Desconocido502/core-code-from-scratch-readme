@@ -2132,6 +2132,17 @@ export function logPerson(person: Person) {
 
 <p align="justify">Sin duplicar estructuras de tipos, modifique definición de la función filterUsers para que podamos pasar solo aquellos criterios que son necesarios, y no toda la información del usuario como es requerido ahora de acuerdo a escribir Mayor dificultad, excluir 'tipo' de los criterios de filtro.</p>
 
+
+# Wednesday 11-05-2022
+
+FP or OPP?
+
+FP: Son buenos cuando tiene un conjunto fijo de cosas y, a medida que el código evoluciona, agrega principalmente nuevas operaciones en esas cosas existentes.
+
+OPP: son buenos cuando tiene un conjunto fijo de operaciones en las cosas.
+
+Ninguno es mejor que el otro, cada uno tiene sus ventajas y desventajas, y hay que saber cuando usarlos.
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
