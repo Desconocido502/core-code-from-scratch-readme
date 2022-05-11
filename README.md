@@ -2102,6 +2102,10 @@ export function logPerson(user: Person) {
 
 persons.forEach(logPerson);
  ```
+ 
+ ### Ejercicio 3
+ 
+<p align="justify">Corregir los errores de tipo logPerson, La función logPerson debe aceptar tanto al usuario como al administrador, y debe generar información relevante de acuerdo con la entrada: ocupación para Usuario y rol Admin.</p>
 
 <p align="justify"></p>
 <p align="justify"></p>
