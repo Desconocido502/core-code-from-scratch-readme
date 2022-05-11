@@ -2135,13 +2135,40 @@ export function logPerson(person: Person) {
 
 # Wednesday 11-05-2022
 
-FP or OPP?
+## FP or OPP?
 
 FP: Son buenos cuando tiene un conjunto fijo de cosas y, a medida que el código evoluciona, agrega principalmente nuevas operaciones en esas cosas existentes.
 
 OPP: son buenos cuando tiene un conjunto fijo de operaciones en las cosas.
 
 Ninguno es mejor que el otro, cada uno tiene sus ventajas y desventajas, y hay que saber cuando usarlos.
+
+## OPP
+
+<p align="justify">Es la forma de progamación que permite a los programadores pensar como si estuvieran trabajando con entidades (Objetos) de la vida real. (Una cosa/algo/objeto con existencia distinta e independiente).</p>
+
+Terminología básica:
+<ul>
+	<li>
+		<h4>Objeto:</h4>
+		<p align="justify">Es la instacia de una clase.</p>
+		<p align="justify">Es la entidad de trabajo de una clase.</p>
+	</li>
+	<li>
+		<h4>Clase:</h4>
+		<p align="justify">Es una plantilla o modelo sobre la capacidad de lo quepuede hacer un objeto.</p>
+	</li>
+	<li>
+		<h4>Método:</h4>
+		<p align="justify">Los comportamientos de una clase.</p>
+		<p align="justify">Indica lo que un método puede hacer.</p>
+	</li>
+	<li>
+		<h4>Instancia:</h4>
+		<p align="justify">El objeto y la instancia son iguales con una pequeña diferencia</p>
+	</li>
+</ul>
+
 
 <p align="justify"></p>
 <p align="justify"></p>
