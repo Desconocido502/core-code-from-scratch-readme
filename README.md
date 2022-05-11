@@ -2111,7 +2111,7 @@ No entendi mucho, solo verificamos que 'role' este en el objeto de person osea =
 
  ### Ejercicio 4
 
-<p align="justify"></p>
+<p align="justify">Descubre como ayudar a TypeScript a comprender los tipos en esta situación y aplique las correciones necesarias.</p>
 
 <p align="justify"></p>
 <p align="justify"></p>
