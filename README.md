@@ -1979,6 +1979,47 @@ console.log(revrot("563000655734469485", 4));
 
 <p>Obteniendo como respuesta: <strong>'0365065073456944'</strong></p>
 
+# Tuesday 10-05-2022
+
+## TypeScript Object Type exercise
+
+<p align="justify">Se nos esta enseñando a como usar los tipos de objetos, hay tres maneras, pueden ser anónimos, por interfaces o de tipo alias</p>
+
+### Anónimos
+
+```typescript
+function greet(person: { name: string; age: number }) {
+  return "Hello " + person.name;
+}
+```
+
+### Interfaces
+
+```typescript
+interface Person {
+  name: string;
+  age: number;
+}
+ 
+function greet(person: Person) {
+  return "Hello " + person.name;
+}
+```
+
+### Alias
+
+```typescript
+type Person = {
+  name: string;
+  age: number;
+};
+ 
+function greet(person: Person) {
+  return "Hello " + person.name;
+}
+```
+
+<p align="justify">En el primer ejercicio se nos solicito arreglar el tipo de Objeto, en este caso fue por Alias, quedando asi:</p>
 
 <p align="justify"></p>
 <p align="justify"></p>
