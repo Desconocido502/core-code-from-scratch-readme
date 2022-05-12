@@ -2169,6 +2169,13 @@ Terminología básica:
 	</li>
 </ul>
 
+<p align="justify">Un plano para el diseño de una casa es como una descripción de clase.</p>
+
+<p align="center">
+<img src="https://static4.depositphotos.com/1003293/382/i/950/depositphotos_3827918-stock-photo-architectural-blueprint.jpg" alt="plano"/>
+</p>
+
+
 
 <p align="justify"></p>
 <p align="justify"></p>
