@@ -2172,8 +2172,32 @@ Terminología básica:
 <p align="justify">Un plano para el diseño de una casa es como una descripción de clase.</p>
 
 <p align="center">
-<img src="https://static4.depositphotos.com/1003293/382/i/950/depositphotos_3827918-stock-photo-architectural-blueprint.jpg" alt="plano" width="360px"/>
+<img src="https://static4.depositphotos.com/1003293/382/i/950/depositphotos_3827918-stock-photo-architectural-blueprint.jpg" alt="plano" width="300px"/>
 </p>
+
+<p align="justify">El plano es como una clase en programación, ya que ambas contienen el diseño (atributos, métodos) para la creación de una n cantidad de objtos.</p>
+
+<p align="justify">Conceptos de programación orientada a objetos:</p>
+
+<ol>
+	<li>Encapsulación</li>
+	<li>Abstracción</li>
+	<li>Polimorfismo</li>
+	<li>Herencia</li>
+</ol>
+
+#### Encapsulación:
+
+<p align="justify">Es un mecanismo para envolver los datos, y el código que acctúa sobre los datos (métodos). Las variables de una clase se pueden ocultar de otras clases y solo se puede acceder a ellas a través de los métodos de su clase actual.</p>
+
+<p align="center">
+<img src="https://cdn-icons-png.flaticon.com/512/1225/1225572.png" alt="encapsulamiento" width="300px"/>
+</p>
+
+
+
+
+
 
 
 
