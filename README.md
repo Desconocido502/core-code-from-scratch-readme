@@ -2221,7 +2221,7 @@ Terminología básica:
 </ol>
 
 <p align="center">
-<img src="https://agrega.juntadeandalucia.es/repositorio/02122016/da/es-an_2016120212_9103251/Polimorfismo.jpg" alt="herencia" width="300px"/>
+<img src="https://miro.medium.com/max/1012/0*H1kMiEu-wk9dyeDF.png" alt="herencia" width="300px"/>
 </p>
 
 <p align="justify"></p>
