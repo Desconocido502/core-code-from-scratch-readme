@@ -2211,6 +2211,18 @@ Terminología básica:
 </p>
 
 
+### Polimorfismo:
+
+<p align="justify">Es la característica de poder asignar un significado o uso diferente a algo en diferentes contextos, específicamente, para permitir que una entidad como una función o un objeto <strong>de tener más de una forma.</strong>Existen 2 tipos de implementaciones de polimorfismo:</p>
+
+<ol>
+	<li>Polimorfismo estático</li>
+	<li>Polimorfismo dinámico</li>
+</ol>
+
+<p align="center">
+<img src="https://agrega.juntadeandalucia.es/repositorio/02122016/da/es-an_2016120212_9103251/Polimorfismo.jpg" alt="herencia" width="300px"/>
+</p>
 
 <p align="justify"></p>
 <p align="justify"></p>
