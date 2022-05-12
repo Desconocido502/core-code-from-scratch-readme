@@ -2199,9 +2199,16 @@ Terminología básica:
 <p align="justify">Es un proceso de ocultar los detalles de implementación del usuario, solo se le proporcionará la funcionalidad al usuario. En otras palabras, el usuario tendrá la información de lo que hace el objeto en lugar de cómo lo hace.</p>
 
 <p align="center">
-<img src="https://ferestrepoca.github.io/paradigmas-de-programacion/poo/poo_teoria/images/Abstraccion.jpg" alt="encapsulamiento" width="300px"/>
+<img src="https://ferestrepoca.github.io/paradigmas-de-programacion/poo/poo_teoria/images/Abstraccion.jpg" alt="abstraccion" width="300px"/>
 </p>
 
+### Herencia:
+
+<p align="justify">La herencia se puede definir como el proceso en el que una clase adquiere las propiedades (métodos y campos) de otra.</p>
+
+<p align="center">
+<img src="https://www.campusmvp.es/recursos/image.axd?picture=/2019/4T/poo-clase-objetos.png" alt="herencia" width="300px"/>
+</p>
 
 
 
