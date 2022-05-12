@@ -2194,9 +2194,13 @@ Terminología básica:
 <img src="https://w7.pngwing.com/pngs/575/266/png-transparent-pharmaceutical-drug-tablet-anti-obesity-medication-capsule-tablet-electronics-weight-loss-pharmaceutical-drug-thumbnail.png" alt="encapsulamiento" width="300px"/>
 </p>
 
+#### Abstracción:
 
+<p align="justify">Es un proceso de ocultar los detalles de implementación del usuario, solo se le proporcionará la funcionalidad al usuario. En otras palabras, el usuario tendrá la información de lo que hace el objeto en lugar de cómo lo hace.</p>
 
-
+<p align="center">
+<img src="https://ferestrepoca.github.io/paradigmas-de-programacion/poo/poo_teoria/images/Abstraccion.jpg" alt="encapsulamiento" width="300px"/>
+</p>
 
 
 
