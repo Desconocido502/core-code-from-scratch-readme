@@ -2191,7 +2191,7 @@ Terminología básica:
 <p align="justify">Es un mecanismo para envolver los datos, y el código que acctúa sobre los datos (métodos). Las variables de una clase se pueden ocultar de otras clases y solo se puede acceder a ellas a través de los métodos de su clase actual.</p>
 
 <p align="center">
-<img src="https://cdn-icons-png.flaticon.com/512/1225/1225572.png" alt="encapsulamiento" width="300px"/>
+<img src="https://w7.pngwing.com/pngs/575/266/png-transparent-pharmaceutical-drug-tablet-anti-obesity-medication-capsule-tablet-electronics-weight-loss-pharmaceutical-drug-thumbnail.png" alt="encapsulamiento" width="300px"/>
 </p>
 
 
