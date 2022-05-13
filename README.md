@@ -2250,8 +2250,27 @@ Terminología básica:
 <ul>
 	<li>Cada número entero del arreglo es el número de una rata que murió después de probar las botellas de vino.</li>
 	<li>Pensar en las ratas como una determinada representación del número de la botella.</li>
-	<li></li>
 </ul>
+
+<p align="justify">Bien, al tomar en cuenta las pistas, se nos indica que pensemos en las ratas cono una determinada representación del número de la botella. Osea que, una rata en si, representa el número de una botella en específico, pero además el número de la rata no da directamente el número de la botella envenenada, ya que de algún modo estamos trabajando con números binarios. En fin, la resolución se reduce que cada número en el arreglo representa la elevación a la que debe de estar el número dos para saber el número de botella correspondiente a cada rata.</p>
+
+<p align="justify">LLegando al resultado de que, al sumar todas las potencias de dos de cada número que existe en el arreglo, se obtiene el número de botella envenenada, quedando así el resultado:</p>
+
+Función completada:
+```javascript
+function find(rats) {
+    return rats.reduce((pv, cv) => pv+Math.pow(2, cv),0);
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(find([0, 1, 9, 3, 5]));
+```
+
+<p>Obteniendo como respuesta: <strong>555</strong></p>
+
 
 <p align="justify"></p>
 <p align="justify"></p>
