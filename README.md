@@ -2243,10 +2243,15 @@ Terminología básica:
 
 <p align="justify">Hint: think of rats as a certain representation of the number of the bottle...</p>
 
+<p align="justify">Se nos solicita en este problema de acertijo, que a partir de la entrada de un arreglo con números enteros del 0 al 9, retornemos el número de la botella que se encuentra envenenada.</p>
 
+<p align="justify">Bien para solucionar el problema, nos dejan pequeñas pistas, las cuales son:</p>
 
-
-
+<ul>
+	<li>Cada número entero del arreglo es el número de una rata que murió después de probar las botellas de vino.</li>
+	<li>Pensar en las ratas como una determinada representación del número de la botella.</li>
+	<li></li>
+</ul>
 
 <p align="justify"></p>
 <p align="justify"></p>
