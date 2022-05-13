@@ -2286,7 +2286,34 @@ arrayDiff([1,2],[1]) == [2]
 arrayDiff([1,2,2,2,3],[2]) == [1,3]
 ```
 
-<p align="justify"></p>
+<p align="justify">Para dicho problema se nos solicita que a partir de dos arreglos de entrada (parámetros), se reste una lista de otra y se retorne la lista limpua, en pocas palabras, se deben borrar los elementos de la lista 'a' que esten en la lista 'b', manteniendo el orden, y en caso de que en la lista 'a' existan n ocurrencias de un elemento de b, se eliminen.</p>
+
+<p align="justify">Para solucionar el problema usamos el método filter y el método includes.</p>
+<ul>
+	<li>Método filter: Se usa para 'filtrar' los elementos del arreglo.</li>
+	<li>Método includes: Sirve para verificar si un x elemento se encuentra en un arreglo.</li>
+</ul>
+
+<p align="justify">Bien, comentando como funciona el método, se diría que filtrariamos elemento por elemento el arreglo a, y por cada elemento del arreglo de a preguntamos si no se incluye en el arreglo b, si es válido se retorna el valor al arreglo mismo, finalmente se retorna el arreglo limpio, sin ocurrecias y sin números que esten dentro del arreglo b.</p>
+
+Función completada:
+```javascript
+function arrayDiff(a, b) {
+    return a.filter((element) => {
+        if (!b.includes(element)) return a
+    });
+}
+```
+
+<p align="justify">Realizando una prueba se obtiene lo siguiente:</p>
+
+```javascript
+console.log(arrayDiff([1,2,2,2,3],[2]));
+```
+
+<p>Obteniendo como respuesta: <strong>[1,3]</strong></p>
+
+
 <p align="justify"></p>
 <p align="justify"></p>
 <p align="justify"></p>
