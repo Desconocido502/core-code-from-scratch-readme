@@ -3050,6 +3050,135 @@ console.log(longestConsec(["tree", "foling", "trashy", "blue", "abcdef", "uvwxyz
 
 <p>Obteniendo como respuesta: <strong>'folingtrashy'</strong></p>
 
+# **Thursday** 19-05-2022
+
+### Tile exercise, using Typescript
+
+<p align="justify">Se tiene que crear una clase para verificar su funcionamiento. A continuación las instrucciones:</p>
+
+<ol>
+  <li>Escribir una definición para una clase nombrada Tile que represente fichas de Scrabble. Las variables de instancia deben ser de tipo string para la variable letter y de tipo number para la variable value.☑️</li>
+  <li>Escribir un constructor que tome los parámetros nombrados letter y value e inicialice las variables de instancia.☑️</li>
+  <li>Escribir un método llamado printTile que imprima las variables de instancia en un formato reader-friendly(no en el formato {...}).☑️</li>
+  <li>No se preocupe, no tiene que verificar si la letra no tiene más de una longitud de cadena.☑️</li>
+  <li>Puede usar esta Mainclase para probar su código.☑️</li>
+</ol>
+
+<p align="justify">Como salida de código se tiene la clase armada:🎢</p>
+
+```typescript
+export class Tile{
+  letter:string;
+  value:number;
+  constructor( letter:string, value:number){
+    this.letter = letter;
+    this.value = value;
+  }
+
+  printTile(){
+    console.log(`
+    ==================
+    Letter: ${this.letter}
+    Value: ${this.value}
+    ==================`);
+  }
+}
+```
+
+### Time exercise, using Typescript
+
+<p align="justify">Se tiene que crear una clase para verificar su funcionamiento. A continuación las instrucciones:</p>
+
+<ol>
+  <li>Escribir una definición para el nombre de clase Time que esta clase usaría para construir un reloj digital. Esta clase debe tener 3 atributos de tipo número. hour, minutey second.☑️</li>
+  <li>Escribir un constructor que tome parámetros llamados hour e inicialice las variables de instancia minute y second.☑️</li>
+  <li>Escribir un método llamado getInSeconds que devuelva un número que represente el tiempo real en la instancia representada en segundos.☑️</li>
+  <li>Escribir un método llamado printTime que imprima las variables de instancia en un formato reader-friendly (no en el formato {...}).☑️</li>
+</ol>
+
+<p align="justify">Como salida de código se tiene la clase armada:🏭</p>
+
+```typescript
+export class Time {
+  hour:number;
+  minute:number;
+  second:number;
+  constructor(hour:number,minute:number,second:number){
+    this.hour = hour;
+    this.minute = minute;
+    this.second = second;
+  }
+
+  printTime(){
+    console.log(`
+    ==================
+    Hours: ${this.hour}
+    Minutes: ${this.minute}
+    Seconds: ${this.second}
+    ==================
+    `);
+  }
+
+  getInSeconds(): number{
+    return this.hour * 3600 + this.minute * 60 + this.second;
+  }
+}
+```
+
+### Rational exercise, using Typescript
+
+<p align="justify">Un número racional es un número que se puede representar como la razón de dos números enteros. Por ejemplo, 2/3 es un número racional y puedes pensar en 7 como un número racional con un 1 implícito en el denominador (7/1). Para esta tarea, escribirá una definición de clase para números racionales.</p>
+
+
+<p align="justify">Se tiene que crear una clase para verificar su funcionamiento. A continuación las instrucciones:</p>
+
+<ol>
+  <li>Cree una nueva clase llamada Rational. Un objeto de Rational debe tener dos variables de instancia numéricas para almacenar numerator y denominator.☑️</li>
+  <li>Escribir un constructor para su clase que tome dos argumentos y los use para inicializar las variables de instancia.☑️</li>
+  <li>Escriba un método llamado printRational que imprima el objeto en algún formato razonable.☑️</li>
+  <li>Escribir un método llamado invertir que invierta el número intercambiando el numerador y el denominador. Este método debería modificar las variables de instancia.☑️</li>
+  <li>Escribir un método llamado toFloat que convierta el número racional en un número de coma flotante y devuelva el resultado. Este método es una función pura , no modifica el objeto.☑️</li>
+  <li>Escriba el método llamado reduce que reduce un número racional a sus términos más bajos al encontrar el máximo común divisor (MCD) del numerador y el denominador y dividir. Este método debería modificar las variables de instancia. Para calcular el GCD puedes buscar Euclidian Algorithm: GCD.☑️</li>
+</ol>
+
+<p align="justify">Como salida de código se tiene la clase armada:🏭</p>
+
+```typescript
+export class Rational {
+  numerator: number; 
+  denominator:number;
+  constructor(numerator: number, denominator:number){
+    this.numerator = numerator;
+    this.denominator = denominator;
+  }
+
+  printRational(){
+    console.log(`${this.numerator} / ${this.denominator}`);
+  }
+
+  invert ():void {
+    let aux = this.numerator
+    this.numerator = this.denominator
+    this.denominator = aux;
+  }
+
+  toFloat():number {
+    return (this.numerator/this.denominator);
+  }
+
+  gcd(n:number, d: number):number{
+    if(d === 0 ) return n;
+    return this.gcd(d,n%d);
+  }
+
+  reduce(){
+    const gcd = this.gcd(this.numerator, this.denominator);
+    this.numerator = this.numerator / gcd;
+    this.denominator = this.denominator / gcd;
+  }
+}
+```
+
 
 <p align="justify"></p>
 <p align="justify"></p>
