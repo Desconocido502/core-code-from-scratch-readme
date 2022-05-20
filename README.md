@@ -3141,7 +3141,7 @@ export class Time {
   <li>Escriba el método llamado reduce que reduce un número racional a sus términos más bajos al encontrar el máximo común divisor (MCD) del numerador y el denominador y dividir. Este método debería modificar las variables de instancia. Para calcular el GCD puedes buscar Euclidian Algorithm: GCD.☑️</li>
 </ol>
 
-<p align="justify">Como salida de código se tiene la clase armada:🏭</p>
+<p align="justify">Como salida de código se tiene la clase armada:🌅</p>
 
 ```typescript
 export class Rational {
