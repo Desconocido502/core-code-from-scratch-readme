@@ -8,7 +8,7 @@
   <li><a href="#consecutive"><strong>Consecutive Strings exercise, using Typescript</strong></a></li>
 </ul>
 
-<a href="duplicate"></a>
+<a name="duplicate"></a>
 
 ##  Duplicate Encoder exercise, using Typescript
   
@@ -125,7 +125,7 @@ console.log(findOdd([1,2,2,3,3,3,4,3,3,3,2,2,1]));
   
 <p>Obteniendo como respuesta: <strong>4</strong></p>
 
-<a href="which"></a>
+<a name="which"></a>
 
 ##  Which Are In? exercise, using Typescript
   
@@ -195,7 +195,7 @@ console.log(operation.inArray(["arp", "live", "strong"],["lively", "alive", "har
   
 <p>Obteniendo como respuesta: <strong>[ 'arp', 'live', 'strong' ]</strong></p>
 
-<a href="sums"></a>
+<a name="sums"></a>
 
 ##  Sums Of Parts exercise, using Typescript
   
@@ -271,7 +271,7 @@ console.log(partsSums([744125, 935, 407, 454, 430, 90, 144, 6710213, 889, 810, 2
    2579358,       0
 ]</strong></p>
 
-<a href="consecutive"></a>
+<a name="consecutive"></a>
 
 ## Consecutive Strings exercise, using Typescript
 
