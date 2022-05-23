@@ -66,7 +66,7 @@ console.log(duplicateEncode('Success'));
   
 <p>Obteniendo como respuesta: <strong>')())())'</strong></p>
 
-<a href="find"></a>
+<a name="find"></a>
 
 ##  Find The Odd Int exercise, using Typescript
   
