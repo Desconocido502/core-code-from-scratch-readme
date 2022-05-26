@@ -124,6 +124,11 @@ So the result of function meeting(s) will be:
 Función completa
 
 ```typescript
+interface person {
+  name: string;
+  last_name: string;
+}
+
 function meeting(s: string): string {
   let aux: string[],
     persons: person[] = s
