@@ -1,4 +1,4 @@
-# Wednesday 18-05-2022
+# Wednesday 25-05-2022
 
 <ul>
   <li><strong>Interfaces guided exercise, using Typescript</strong>☑️</li>
@@ -124,11 +124,6 @@ So the result of function meeting(s) will be:
 Función completa
 
 ```typescript
-interface person {
-  name: string;
-  last_name: string;
-}
-
 function meeting(s: string): string {
   let aux: string[],
     persons: person[] = s
