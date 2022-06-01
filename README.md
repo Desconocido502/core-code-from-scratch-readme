@@ -261,4 +261,40 @@
 			</li>
 		</ul>
 	</li>
+	<li>
+		<a href="./Week 8/Indice.md"><strong>Week 8</strong></a>
+		<ul>
+			<li>
+				Monday
+				<ul>
+					<li><strong>Get Started With TypeScript guided exercise, using Typescript 💹</strong></li>
+  					<li><strong>Declare Variable Types In TypeScript guided exercise, using Typescript 💹</strong></li>
+  					<li><strong>Object-Oriented Programming - Resume video viewed💹</strong></li>
+				</ul>
+			</li>
+			<li>
+				Tuesday
+				<ol>
+					<li><strong>Develop typed functions by using TypeScript guided exercise, using Typescript 💹</strong></li>
+  					<li><strong>Declare and instantiate classes in TypeScript guided exercise, using Typescript 💹</strong></li>
+  					<li><strong>Abstract Classes vs Interfaces video viewed💹</strong></li>
+				</ol>
+			</li>
+			<li>
+				Wednesday
+				<ol>
+					<li><strong>Define generics in TypeScript guided exercise, using Typescript</strong>☑️</li>
+					<li><strong>Generics exercise, using Typescript</strong></li>
+					<li><strong>Make the Deadfish Swim exercise, using Typescript</strong></li>
+				</ol>
+			</li>
+			<li>
+				Thursday
+				<ol>
+					<li><strong>TicTacToe exercise, using Typescript</strong></li>
+					<li><strong>6th Core Challenge, complete your Interview Prep Core Challenge</strong></li>
+				</ol>
+			</li>
+		</ul>
+	</li>
 </ul>
