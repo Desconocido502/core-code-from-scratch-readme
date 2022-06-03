@@ -878,30 +878,6 @@ class DogRecord implements Dog {
 <strong>Resumen</strong>
 <p align="justify">A medida que continúe utilizando TypeScript, encontrará muchas instancias nuevas en las que las interfaces, en particular, facilitarán su vida como desarrollador. Una característica clave de TypeScript para recordar acerca de las interfaces es que no requieren una clase. Esto le permite usarlos siempre que necesite la capacidad de definir una estructura de datos sin tener que crear una implementación de clase completa.</p>
 
----
-
-###
-
-<p align="justify"></p>
-<p align="justify"></p>
-<i></i>
-
-
-
-<br />
-
-<!-- ```typescript
-
-``` -->
-
-<!-- <ul>
-  <li></li>
-</ul> -->
-<!-- <img/> -->
-<p align="justify"></p>
-<strong></strong>
-<p align="center"></p>
-<br />
 
 ```typescript
 function calculateTotalPrice(prices: number[], discount: number): number {

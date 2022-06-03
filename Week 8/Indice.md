@@ -1,4 +1,4 @@
-## Indice de Ejercicios realizados en la Semana 6 :fireworks: 💹
+## Indice de Ejercicios realizados en la Semana 8 :fireworks: 💹
 
 <ul>
     <li>

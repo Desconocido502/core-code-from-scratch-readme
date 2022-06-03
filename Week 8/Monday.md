@@ -1,4 +1,4 @@
-# Monday 23-05-2022
+# Monday 30-05-2022
 
 <ol>
   <li><strong>Get Started With TypeScript guided exercise, using Typescript </strong></li>
@@ -205,7 +205,7 @@ console.log(ContractStatus[employeeStatus]);
 
 <p align="justify">El tipo any es el tipo que puede representar cualquier valor de JavaScript sin restricciones. Esto puede ser útil cuando espera un valor de una biblioteca de terceros o entradas de usuario donde el valor es dinámico porque el anytipo le permitirá reasignar diferentes tipos de valores. Y, como se mencionó anteriormente, usar el anytipo le permite migrar gradualmente su código JavaScript para usar tipos estáticos en TypeScript.</p>
 
-El siguiente ejemplo declara una variable de tipo anyy le asigna valores:
+El siguiente ejemplo declara una variable de tipo <i>any</i> y le asigna valores:
 
 ```typescript
 let randomValue: any = 10;
@@ -243,7 +243,7 @@ randomValue.toUpperCase();      // Error: Object is of type unknown
 ```
 
 <strong>Nota</strong>
-<p align="justify">La principal diferencia entre anyy unknownes que no puede interactuar con una variable de tipo unknown; hacerlo genera un error de compilación . anyomite cualquier verificación en tiempo de compilación y el objeto se evalúa en tiempo de ejecución; si el método o la propiedad existe, se comportará como se esperaba.</p>
+<p align="justify">La principal diferencia entre <i>any</i> y <i>unknown</i> es que no puede interactuar con una variable de tipo unknown; hacerlo genera un error de compilación. <i>any</i> omite cualquier verificación en tiempo de compilación y el objeto se evalúa en tiempo de ejecución; si el método o la propiedad existe, se comportará como se esperaba.</p>
 
 ---
 
