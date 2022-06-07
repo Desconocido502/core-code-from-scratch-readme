@@ -70,7 +70,7 @@ arrayDiff([1,2],[1]) == [2]
 arrayDiff([1,2,2,2,3],[2]) == [1,3]
 ```
 
-<p align="justify">Para dicho problema se nos solicita que a partir de dos arreglos de entrada (parámetros), se reste una lista de otra y se retorne la lista limpua, en pocas palabras, se deben borrar los elementos de la lista 'a' que esten en la lista 'b', manteniendo el orden, y en caso de que en la lista 'a' existan n ocurrencias de un elemento de b, se eliminen.</p>
+<p align="justify">Para dicho problema se nos solicita que a partir de dos arreglos de entrada (parámetros), se reste una lista de otra y se retorne la lista limpia, en pocas palabras, se deben borrar los elementos de la lista 'a' que esten en la lista 'b', manteniendo el orden, y en caso de que en la lista 'a' existan n ocurrencias de un elemento de b, se eliminen.</p>
 
 <p align="justify">Para solucionar el problema usamos el método filter y el método includes.</p>
 <ul>
