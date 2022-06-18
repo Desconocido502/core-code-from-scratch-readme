@@ -1,4 +1,4 @@
-## Indice de Ejercicios realizados en la Semana 6 :fireworks:
+## Indice de Ejercicios realizados en la Semana 7 :fireworks:
 
 <ul>
     <li>
@@ -26,11 +26,11 @@
     <li>
         <a href="./Thursday.md">Thursday</a>
         <ul>
-            <li><strong>Watch Object Oriented Programming - The Four Pillars of OOP</strong></li>
+            <li><strong>Object Oriented Programming - The Four Pillars of OOP video viewed</strong></li>
             <li><strong>Time exercise, using Typescript</strong></li>
-            <li><strong>Watch Abstract Classes vs Interfaces</strong></li>
+            <li><strong>Abstract Classes vs Interfaces video viewed</strong></li>
             <li><strong>Read Abstract Classes</strong></li>
-            <li><strong>✨ 5th Core Challenge, update your resume here</strong></li>
+            <li><strong>5th Core Challenge, update your resume</strong></li>
         </ul>
     </li>
 </ul>

@@ -211,8 +211,6 @@ console.log(numberValue); // Returns 200
 console.log(stringValue); // Returns 100100
 ```
 
-<br />
-
 ---
 
 <strong>🏳️ Nota:</strong>

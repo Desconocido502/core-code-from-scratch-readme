@@ -1,4 +1,4 @@
-# Thursday 26-05-2022
+# Thursday 02-06-2022
 
 <ul>
   <li><a href="#tile"><strong>Tile exercise, using Typescript</strong></a></li>

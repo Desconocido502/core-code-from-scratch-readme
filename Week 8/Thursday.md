@@ -182,10 +182,10 @@ Salida en consola:
 
 ```code
 [5,1,2,3,4]
- 5
- [1,2,3,4]
- 4
- [1,2,3]
+5
+[1,2,3,4]
+4
+[1,2,3]
 ```
 
 <p align="justify">Con eso, completando el ejercicio con génericos.</p>

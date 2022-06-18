@@ -259,8 +259,275 @@ Valid outputs for the above input would be 0, 1, 2, 4, 5, 7 or 8.
 ```code
 solveTTT(['O', '', '', 'O', 'X', '', 'X', 'O', 'X'])
 ```
-Faltan los problemas 4 y 5, 4 inconcluso y 5 no leido
+
+<br />
+<p align="justify">Se nos solicita que a partir de un arreglo que contiene 'O', 'X', y ''. Retornemos el movimiento ganador o movimiento válido. En este caso, la solución no la logre realizar yo como programador, pero la solución del readme, es bastan sencilla y fácil de entender, por tanto procederé a explicar como se soluciona.</p>
+
+<p align="justify">Tomar en cuenta que menciona que se debe hacer un movimiento válido, y un movimiento ganador si se encuentra disponible.</p>
+
+<p align="justify">Bien para esto, se debe tomar en cuenta que pueden haber n cantidad de movimientos que se pueden hacer para ganar en el tictactoe. Pero esa n cantidad de movimientos esta condicionada al tamaño del arreglo el cual siempre será de largo 9.</p>
+
+<p align="justify">En el arreglo que actúa como tablero, puede venir de cualquier forma osea puede venir diferentes "ordenes" en el tablero, y lo que tenemos que encontrar es o un movimiento válido o un movimiento ganador.</p>
+
+<p align="justify">Por tanto, se realizo la siguiente función y funciones complementarias, para resolver el problema:</p>
+
+```javascript
+function solveTTT(board) {
+  const countX = board.filter((x) => x === 'X').length;
+  if (countX == 1) return board.indexOf('');
+  let xIndex = board.indexOf('X');
+  let verifySpots = [];
+  let validSpots = [];
+  while (xIndex != -1) {
+    verifySpots = validSpotsInBoard.get(xIndex);
+    xIndex = board.indexOf('X', xIndex + 1);
+    verifySpots.forEach((spot) => {
+      if (areValidSpots(board, ...spot)) {
+        validSpots.push(spot);
+      }
+    });
+  }
+  let winIndex = getWinIndex(board, validSpots);
+  if (winIndex == -1) return getIndexOfEmpy(board, ...validSpots[0]);
+  return winIndex;
+}
+```
+
+<br />
+
+### Funciones complementarias
+
+```javascript
+const validSpotsInBoard = new Map([
+  [0,[[3, 6],[1, 2],[4, 8]]],
+  [1,[[0, 2],[4, 7]]],
+  [2,[[0, 1],[6, 4],[5, 8]]],
+  [3,[[0, 6],[4, 5]]],
+  [4,[[0, 8],[6, 2],[1, 7],[3, 5]]],
+  [5,[[2, 8],[3, 4]]],
+  [6,[[0, 3],[7, 8],[4, 2]]],
+  [7,[[6, 8],[1, 4]]],
+  [8,[[0, 4],[6, 7],[2, 5]]]
+]);
+
+const getIndexOfEmpy = (array, indexOne, indexTwo) => {
+  if (array[indexOne] === '') return indexOne;
+  return indexTwo;
+};
+
+const areValidSpots = (array, indexOne, indexTwo) => {
+  return array[indexOne] !== 'O' && array[indexTwo] !== 'O';
+};
+
+const isWinSpot = (array, indexOne, indexTwo) => {
+  if (array[indexOne] === 'X' && array[indexTwo] === '') return true;
+  if (array[indexOne] === '' && array[indexTwo] === 'X') return true;
+  return false;
+};
+
+const getWinIndex = (array, validSpots) => {
+  for (let i = 0; i < validSpots.length; i++) {
+    if (isWinSpot(array, ...validSpots[i]))
+      return getIndexOfEmpy(array, ...validSpots[i]);
+  }
+  return -1;
+};
+```
+
+<br />
+
+<p align="justify">Bien, ahora que ya se mostró en general las funciones, se procede a explicar una por una.</p>
+
+#### **validSpotsInBoard**
+
+```javascript
+const validSpotsInBoard = new Map([
+  [0,[[3, 6],[1, 2],[4, 8]]],
+  [1,[[0, 2],[4, 7]]],
+  [2,[[0, 1],[6, 4],[5, 8]]],
+  [3,[[0, 6],[4, 5]]],
+  [4,[[0, 8],[6, 2],[1, 7],[3, 5]]],
+  [5,[[2, 8],[3, 4]]],
+  [6,[[0, 3],[7, 8],[4, 2]]],
+  [7,[[6, 8],[1, 4]]],
+  [8,[[0, 4],[6, 7],[2, 5]]]
+]);
+```
+
+<br />
+
+<p align="justify">Esta mas que una función simplemente almacenará un objeto de tipo Map, por medio del constructor le pedimos que almacene tipos de datos simples u otros objetos, y se almacenan en pares de <i>clave - valor</i>, por tanto en el caso de la <i>clave</i> se colocarán los indices del arreglo, ya que como sabemos que el arreglo nunca será más grande que 9, y como bien mencionamos es el <i>indice</i>, y su valor sera una matriz de 1 x (3 | 2) elementos, estos valores son las posiciones donde al colocar una 'X' el jugador podria ganar.</p>
+
+#### **areValidSpots**
+
+```javascript
+const areValidSpots = (array, indexOne, indexTwo) => {
+  return array[indexOne] !== 'O' && array[indexTwo] !== 'O';
+};
+```
+
+<br />
+
+<p align="justify">Se le manda un arreglo y dos indices, y lo que realiza es verificar si en el arreglo tanto en el indice1 como en el indice2 sean diferentes de 'O', ya que en el caso de que sean iguales el jugador no podria ganar, ya que no puede colocar el tres en raya. Dependiendo de que si cumpla la validación retorna un valor booleano en dicho caso true, y en caso contrario retorna un false.</p>
+
+#### **getIndexOfEmpy**
+
+```javascript
+const getIndexOfEmpy = (array, indexOne, indexTwo) => {
+  if (array[indexOne] === '') return indexOne;
+  return indexTwo;
+};
+```
+
+<br />
+
+<p align="justify">Se le manda un arreglo y dos indices, y lo que realiza es verificar si el arreglo en el primer indice que se le manda contiene un espacio vació, en caso de que se cumpla retorna el primer indice, eso quiere decir que ahi puedo colocar una 'X', y caso de que no sea una cadena vacia retorno el segundo indice.</p>
+
+#### **isWinSpot**
+
+```javascript
+const isWinSpot = (array, indexOne, indexTwo) => {
+  if (array[indexOne] === 'X' && array[indexTwo] === '') return true;
+  if (array[indexOne] === '' && array[indexTwo] === 'X') return true;
+  return false;
+};
+```
+
+<br />
+
+<p align="justify">Se le manda un arreglo y dos indices, Aqui verificamos si el arreglo en la posicion del primer indice es igual a 'X' y que además en la posicion del segundo indice es igual a '' retorne true, y tambien se valida al revés y de igual manera retorna true, y en caso de que no se cumpla niguna de las validaciones retorna false.</p>
+
+#### **getWinIndex**
+
+```javascript
+const getWinIndex = (array, validSpots) => {
+  for (let i = 0; i < validSpots.length; i++) {
+    if (isWinSpot(array, ...validSpots[i]))
+      return getIndexOfEmpy(array, ...validSpots[i]);
+  }
+  return -1;
+};
+```
+
+<br />
+
+<p align="justify">Se le manda un arreglo que contiene el arreglo original, y el otro que es una matriz de 1 x (2 | 3) elementos. Entonces lo que hacemos es obtener la posición ganadora donde al colocar nosotros la 'X', vamos a ganar, y si se dan cuenta, practicamente esta función a su vez contiene funciones complementarias. En caso de que no se encuentre el movimiento ganador, se retorna un -1.</p>
+
+#### **solveTTT**
+
+```javascript
+function solveTTT(board) {
+  const countX = board.filter((x) => x === 'X').length;
+  if (countX == 1) return board.indexOf('');
+  let xIndex = board.indexOf('X');
+  let verifySpots = [];
+  let validSpots = [];
+  while (xIndex != -1) {
+    verifySpots = validSpotsInBoard.get(xIndex);
+    xIndex = board.indexOf('X', xIndex + 1);
+    verifySpots.forEach((spot) => {
+      if (areValidSpots(board, ...spot)) {
+        validSpots.push(spot);
+      }
+    });
+  }
+  let winIndex = getWinIndex(board, validSpots);
+  if (winIndex == -1) return getIndexOfEmpy(board, ...validSpots[0]);
+  return winIndex;
+}
+```
+
+<br />
+
+<p align="justify">En la función principal hacemos lo siguiente, lo primero que hacemos es usar un filter en el cual vamos a recorrer todo el arreglo en busca de las 'X', y aplicamos la función length, para calcular el tamaño. Este valor se almacenará en el contador x, en caso de que solo exista una x en el tablero, se retornará el indice del primer espacio vacio que se encuentre, ya que no podriamos completar el 3 en raya con una sola x, necesitariamos mas de 1 'X' para completar el tres en raya.</p>
+
+<p align="justify">Lo siguiente que se hace es obtener el indice de la primera X que se encuentre en el arreglo, y creamos dos arreglos uno que almacena las posiciones a verificar, y otro que almacena las posible posiciones ganadoras. Entramos a un while y mientras que el xIndex sea diferente de -1 realice todas las operaciones necesarias dentro del while.</p>
+
+
+<p align="justify">Lo primero que hacemos es obtener el arreglo de posiciones a verificar donde se encontro la primera 'X', y se almacena en el arreglo de movimientos a verificar, luego de esto, volvemos  a buscar la siguiente X dentro del arreglo, y por ultimo en el arreglo de movimientos a verificar lo recorremos, y recorreremos cada arreglo almacenado dentro de dicho arreglo, luego cada arreglo se manda a verificar si sus valores son movimientos validos, en caso de que se cumpla, los almacenamos en el arreglo de posiciones validas para ganar.</p>
+
+<p align="justify">Tomar en cuenta que tomará y almacenerás las posiciones validas para ganar de cada 'X' existente en el arreglo.</p>
+
+<p align="justify">Para ir terminando, usamos la funcion de getWinIndex, para obtener el indice ganador, en caso de que sea igual a -1, debemos retornar la primera posicion donde se encuentre un espacion vacio, y sino simplemente retornamos el indice ganador.</p>
 
 <a name="ttt-2"></a>
+
+##  Tic-Tac-Toe-Like Table Generator exercise, using Javascript
+
+### Do you have in mind the good old TicTacToe?
+
+<p align="justify">Assuming that you get all the data in one array, you put a space around each value, | as a columns separator and multiple - as rows separator, with something like ["O", "X", " ", " ", "X", " ", "X", "O", " "] you should be returning this structure (inclusive of new lines):</p>
+
+
+```code
+ O | X |   
+-----------
+   | X |   
+-----------
+ X | O |  
+```
+
+<br />
+<p align="justify">Now, to spice up things a bit, we are going to expand our board well beyond a trivial 3 x 3 square and we will accept rectangles of big sizes, still all as a long linear array.</p>
+
+<p align="justify">For example, for "O", "X", " ", " ", "X", " ", "X", "O", " ", "O"] (same as above, just one extra "O") and knowing that the length of each row is 5, you will be returning</p>
+
+```code
+ O | X |   |   | X 
+-------------------
+   | X | O |   | O 
+```
+
+<br />
+<p align="justify">And worry not about missing elements, as the array/list/vector length is always going to be a multiple of the width.</p>
+
+<p align="justify">A partir de dos argumentos uno es un arreglo y el otro un numero entero, se nos solicita que retornemos una tabla de tictactoe, y las dimensiones pueden variar.</p>
+
+<p align="justify">En este caso, logre conseguir la solución de otra persona, la cual lo trabajo bastante sencillo.</p>
+
+```javascript
+function displayBoard(b,w,r=[]) {
+  b = b.map(c => ' ' + c + ' ');
+  for (let i=0; i<b.length; i+=w) r.push(b.slice(i,i+w))
+  return r.map(c => c.join('|')).join('\n' + '-'.repeat(4*w-1) + '\n');
+}
+```
+
+<br />
+
+<p align="justify">Lo primero que se realiza es utlizar un map, donde se recorre elemento por elemento, y por cada elemento, le agregamos un espacio al inicio y al final del nésimo elemento, y se retorna al arreglo, ya que se tiene hecho ese procedimiento.</p>
+
+<p align="justify">Ahora con un ciclo for normal, agregamos a un arreglo nuevo un parte del arreglo inicial, esto se hace por medio del metodo slice, que corta un arreglo desde una posicion inicial hasta una posicion final.</p>
+
+<p align="justify">De una vez retornamos el valor con el siguiente procedimiento, vamos a recorrer los elementos del arreglo nuevo, y cada elemento es un arreglo que contiene los n elementos del arreglo original, lo que haremos por cada vuelta es aplicar el metodo join que nos sirve para unir los elementos por medio algun caracter en especifico (en este caso "|"), y lo retornamos.</p>
+
+<p align="justify">Por ultimo en este punto al terminar la vuelta, agregamos por medio del metodo join nuevamente los strings medio, que serian las lineas de separación, y usamos el metodo repeat para que las lineas se repitan 4 veces la cantidad width menos 1, para que agregue las respectivas lineas, dando asi el siguiente resultado:</p>
+
+```javascript
+console.log(displayBoard(["O", "X", " ", " ", "X", " ", "X", "O", " ", "O"], 5));
+console.log(displayBoard(["O", "X", " ", " ", "X", " ", "X", "O", " "],3));
+console.log(displayBoard(["O", "X", "X", "O"],2));
+```
+
+salida:
+
+```javascript
+---------------------------------------------------------
+                         O | X |   |   | X  
+                        ------------------- 
+                           | X | O |   | O  
+---------------------------------------------------------
+                             O | X |    
+                            ----------- 
+                               | X |    
+                            ----------- 
+                             X | O |   
+---------------------------------------------------------
+                               O | X  
+                              ------- 
+                               X | O
+---------------------------------------------------------
+```
+<br />
 
 <a href="../README.md">Inicio</a>

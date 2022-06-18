@@ -93,17 +93,3 @@
   <li>Future proof</li>
   <li>Grow as you go</li>
 </ul>
-
-
-<!-- ```typescript
-
-``` -->
-
-<!-- <ul>
-  <li></li>
-</ul> -->
-<!-- <img/> -->
-<p align="justify"></p>
-<strong></strong>
-<p align="center"></p>
-<br />

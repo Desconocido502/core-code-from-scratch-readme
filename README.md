@@ -333,6 +333,40 @@
 			</li>
 		</ul>
 	</li>
+	<li>
+		<a href="./Week 10/Indice.md"><strong>Week 10</strong></a>
+		<ul>
+			<li>
+				Monday
+				<ul>
+					<li><strong>Check the All You Need To Know About TypeScript video 💹</strong></li>
+  					<li><strong>Read this Answer, for the following question: "What is TypeScript and why would I use it in place of JavaScript?" 💹</strong></li>
+  					<li><strong>Check the 5 reasons to use TypeScript video💹</strong></li>
+				</ul>
+			</li>
+			<li>
+				Tuesday
+				<ol>
+					<li><strong>Review OOP concepts again with the Fundamental Concepts of Object Oriented Programming video 💹</strong></li>
+  					<li><strong>Declare and instantiate classes in TypeScript guided exercise, using Typescript 💹</strong></li>
+  					<li><strong>Check this Object Oriented Programming - The Four Pillars of OOP video, this video use Java, but the idea is the same💹</strong></li>
+				</ol>
+			</li>
+			<li>
+				Wednesday
+				<ol>
+					<li><strong>Check Four OOP principles video</strong>☑️</li>
+					<li><strong>Check S.O.L.I.D video</strong></li>
+					<li><strong>Check another S.O.L.I.D video</strong></li>
+				</ol>
+			</li>
+			<li>
+				Thursday
+				<ol>
+					<li><strong>Read about OOP in Post 0</strong></li>
+					<li><strong>Read about OOP in Post 1</strong></li>
+				</ol>
+			</li>
+		</ul>
+	</li>
 </ul>
-
-
