@@ -347,24 +347,27 @@
 			<li>
 				Tuesday
 				<ol>
-					<li><strong>Review OOP concepts again with the Fundamental Concepts of Object Oriented Programming video 💹</strong></li>
-  					<li><strong>Declare and instantiate classes in TypeScript guided exercise, using Typescript 💹</strong></li>
-  					<li><strong>Check this Object Oriented Programming - The Four Pillars of OOP video, this video use Java, but the idea is the same💹</strong></li>
+					<li><strong>This video viewed</strong></li>
+					<li><strong>This video viewed</strong></li>
+					<li><strong>React Kata</strong></li>
 				</ol>
 			</li>
 			<li>
 				Wednesday
 				<ol>
-					<li><strong>Check Four OOP principles video</strong>☑️</li>
-					<li><strong>Check S.O.L.I.D video</strong></li>
-					<li><strong>Check another S.O.L.I.D video</strong></li>
+					<li><strong>Node.JS Core Understanding Learning Exercise 🧠</strong></li>
+					<li><strong>Node.JS Module System Core Understanding Learning Exercise 🧠</strong></li>
+					<li><strong>Node.JS Module System Practice 💻</strong></li>
+					<li><strong>Client-Server Model Learning Exercise 🧠</strong></li>
 				</ol>
 			</li>
 			<li>
 				Thursday
 				<ol>
-					<li><strong>Read about OOP in Post 0</strong></li>
-					<li><strong>Read about OOP in Post 1</strong></li>
+					<li><strong>APIs Core Understanding Learning Exercise 🧠</strong></li>
+					<li><strong>From JSON to REST Learning Exercise 🧠</strong></li>
+					<li><strong>REST API Clients Learning Exercise 🧠</strong></li>
+					<li><strong>Express.JS Core Understanding Learning Exercise 🧠</strong></li>
 				</ol>
 			</li>
 		</ul>
