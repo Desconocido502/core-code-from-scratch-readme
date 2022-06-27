@@ -2,27 +2,27 @@
 
 <ul>
     <li>
-        Monday
+        <a href="./Monday.md">Monday</a>
         <ul>
             <li><strong>Forrest Gump Ping-Pong API 🏓</strong></li>
             <li><strong>Delayed Response API ⏳</strong></li>
         </ul>
     </li>
     <li>
-        Tuesday
+        <a href="./Tuesday.md">Tuesday</a>
         <ol>
             <li><strong>Work on my project 🧠</strong></li>
         </ol>
     </li>
     <li>
-        Wednesday
+        <a href="./Wednesday.md">Wednesday</a>
         <ol>
             <li><strong>Age Prediction API 👶-👴</strong></li>
             <li><strong>NSA Secrets Box API - Hacking Challenge 👨‍💻</strong></li>
         </ol>
     </li>
     <li>
-        Thursday
+        <a href="./Thursday.md">Thursday</a>
         <ol>
             <li><strong>>Work on my project 🧠</strong></li>
         </ol>
