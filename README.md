@@ -398,8 +398,37 @@
 			<li>
 				Thursday
 				<ol>
-					<li><strong>>Work on my project 🧠</strong></li>
+					<li><strong>Work on my project 🧠</strong></li>
 				</ol>
+			</li>
+		</ul>
+	</li>
+	<li>
+		<a href="./Week 12/Indice.md"><strong>Week 12</strong></a>
+		<ul>
+			<li>
+				Monday
+				<ul>
+					<li><strong>Work on my project 🧠</strong></li>
+				</ul>
+			</li>
+			<li>
+				Tuesday
+				<ul>
+					<li><strong>Work on my project 🧠</strong></li>
+				</ul>
+			</li>
+			<li>
+				Wednesday
+				<ul>
+					<li><strong>Work on my project 🧠</strong></li>
+				</ul>
+			</li>
+			<li>
+				Thursday
+				<ul>
+					<li><strong>Work on my project 🧠</strong></li>
+				</ul>
 			</li>
 		</ul>
 	</li>
