@@ -24,7 +24,7 @@
     <li>
         <a href="./Thursday.md">Thursday</a>
         <ol>
-            <li><strong>>Work on my project 🧠</strong></li>
+            <li><strong>Work on my project 🧠</strong></li>
         </ol>
     </li>
 		</ul>
