@@ -152,4 +152,4 @@ CREATE TABLE IF NOT EXISTS mytable (
 
 <p align="justify"><i><strong>¡¡CUIDADO!!</strong>, Si omitimos WHERE, se eliminan todas las filas</i></p>
 
-<p align="justify">Bien, por ahora ya vimos lo que es uba BD relacional, el siguiente dia ya podremos concentrarnos en cada uno de los endpoints que contendrá la API.</p>
+<p align="justify">Bien, por ahora ya vimos lo que es una BD relacional, el siguiente dia ya podremos concentrarnos en cada uno de los endpoints que contendrá la API.</p>
