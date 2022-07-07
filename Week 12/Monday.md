@@ -6,11 +6,11 @@
 
 <p align="justify">Bien, ya vimos algunas de las explicaciones para poder realizar consultas en SQLITE, ahora entraremos de fondo con cada uno de los endpoints a trabajar.</p>
 
-## Obtener todos los TO-Do's
+## Obtener todos los To-Do's
 
 <p align="justify">Como buena práctica para la creación de end-points, se recomienda estandarizar el nombre de la ruta, y que sea singular. También trabajaremos de manera asincrona, ya que el usuario puede hacer la petición en cualquier momento, y habrá que dejarlo interactuar con algo más mientras llega su respuesta. Lo primero que haremos dentro de la función es traer el controlador de la BD. Una vez lo tengamos obtenemos todos los to-do's de la BD.</p>
 
-<p align="justify">Una vez ya se tegan los to-do's, se cierra el controlador de la BD. En caso de que la BD se encuentre vacía, retornará un error, de lo contrario, simplemente retorna los to-do's, además si ocurre algún problema al intentar obtener los to-do's, enviará un mensaje indicado cual es el error. Quedando asi, el siguiente código:</p>
+<p align="justify">Una vez ya se tengan los to-do's, se cierra el controlador de la BD. En caso de que la BD se encuentre vacía, retornará un error, de lo contrario, simplemente retorna los to-do's, además si ocurre algún problema al intentar obtener los to-do's, enviará un mensaje indicado cual es el error. Quedando asi, el siguiente código:</p>
 
 ```javascript
 //*Obtener todos los Todo's de la tabla
@@ -36,7 +36,7 @@ RequestHandler.get("/to-dos", async (req, res) => {
 });
 ```
 
-## Crear un TO-Do de la BD
+## Crear un To-Do de la BD
 
 <p align="justify">Dicha función será también asincrona, y como crearemos un todo de la BD, necesitamos obtener la información que nos ayudará a crear dicho to-do para ingresarlo a la BD. Dicha información se encuentra almacenada en el cuerpo de la petición, obtenemos cada una de los atributos por medio de la destructuración. Obtenemos el manejador de la BD, e insertamos los datos obtenidos anteriormente a la tabla. Al final se cierra el manejador de la BD y se retorna la información del to-do creado. En caso de que exista un error al intentar crear un nuevo to-do, se retornará un mensaje, quedando así el siguiente código:</p>
 
@@ -158,20 +158,5 @@ RequestHandler.delete("/to-dos/:id", async (req, res) => {
 
 <p align="justify">Terminado asi con cada una de las peticiones que se le realizarán a la API, además cabe agregar que todas estas peticiones se encuentran al macenadas en el archivo manejador de rutas, por tanto al final de todo se debe exportar el manejador de rutas, para que las rutas de la API, funcionen de manera correcta.</p>
 
+<a href="../README.md">Inicio</a>
 
-<!-- ```typescript
-
-``` -->
-
-<!-- <ul>
-  <li></li>
-</ul> -->
-<!-- <img/> -->
-
-<i></i>
-
-<strong></strong>
-
-<p align="justify"></p>
-<p align="center"></p>
-<br />

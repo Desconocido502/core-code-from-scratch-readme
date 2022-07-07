@@ -1,103 +1,84 @@
 # Wednesday 29-06-2022
 
 <ul>
-    <li><strong>Age Prediction API 👶-👴</strong></li>
-    <li><strong>NSA Secrets Box API - Hacking Challenge 👨‍💻</strong></li>
+  <li><strong>Work on my project 🧠</strong></li>
 </ul>
 
-<a name="Age-prediction"></a>
+<p align="justify">En esta parte estaremos realizando los cambios necesarios para el frontend. Nos quedamos en el archivo <strong>api</strong> de la carpeta <strong>lib</strong>, ahora regresamos nuevamente al archivo <strong>TodoList</strong>.</p>
 
-## Age Prediction API
+<p align="justify">Una breve explicación de useEffect, useEffect nos sirve para que nuestras funciones sigan siendo puras, con esto nos referimos a que la data que se mande a dicha función sea manipulada por otra y no por la función por la cual llegaron las variables u objetos.</p>
 
-<p align="justify">Create a simple REST API that tries to predict an age based on a name.</p>
+<p align="justify">Bien lo primero que haremos es usar la función useEffect para obtener todos los To-Do's, sino hay problema se obtienen y se le pasan a la función <i>setTodos</i>, la cuál es la encargada de mostrar los To-Do's en la página del usuario. En caso de que exista un error se mostrará una alerta con un mensaje que nos indica el error. En general esto nos servirá para mostrar los datos al usuario.</p>
 
-### API Requeriments:
+<p align="center"><img src="../img/useEffect.png" alt="useEffect para mostrar los To-Do's al usuario "/></p>
 
-<ul>
-  <li>Use Express.JS to build the API.</li>
-  <li>The API should be capable to response to any name.</li>
-  <li>
-  
-  The API should use route parameters to get the name:
+<p align="justify">Como se observa en la imagen, es el cambio de usar los To-Do's todo desde el frontend, a pasar los To-Do's al backend.</p>
 
-    ```code
+<p align="justify">La siguiente función es una función flecha, para agregar un To-Do, a la cual se le pasa un objeto To-Do, y lo primero que se revisa es que el titulo sea diferente de undefined y que el titulo no contenga solo espacios vacios, en caso de que se cumpla una u otra, se retorne ya que esta mal el titulo.</p>
 
-    # Request example
-    # Here samsepiol is the name the API should try to
-    # predict the age.
-    http://localhost:3000/api/age/samsepiol
+<p align="justify">Si todo esta bien al crear el nuevo To-Do, se traen los To-Do's, se obtienen  y se establecen para mostrar al usuario la actualización, en caso de que exista un error, se mostrará el mensaje de error en una alerta. Asi mostrando el siguiente codigo: </p>
 
-    ```
-  
-  </li>
-  <li>The age should be a random number that satisfies the condition: age > 0 && age < 100.</li>
-  <li>The response should include the age in days.</li>
-  <li>
-  
-  The response should look similar to this one:
+```typescript
+const addTodo = (todo) => {
+  if (!todo.title || /^\s*$/.test(todo.title)) {
+    return;
+  }
 
-  ```json
-{
-      "name": "samsepiol",
-      "age": "62",
-      "days": "19366"
-}
-  ```
-  
-  </li>
-  <li>
-  If no name is provided in the request, the API should return an error message
-prompting you to use the correct parameters:
+  axios.post("http://localhost:5000/api/v1/to-dos", { ...todo }).then(() => {
+    getTodos()
+      .then((todos) => setTodos(todos))
+      .catch((error) => alert(error.message));
+  });
+};
+```
 
-  ```json
-{
-    "error": "Missing parameter 'name' was expected."
-}
-  ```
+<p align="justify">El siguiente es para actualizar un To-Do, esto se hace por medio del id del To-Do, y se le mandan el titulo y la descripción, y se realiza la misma validación que mencionamos al crear un To-Do. Estos datos, son pasados a la función <i>updateTodoData</i> para que actualice el To-Do. Si todo sale bien, se obtienen los todos y se establecen nuevamente para la vista del usuario, si ocurre un error se mostrará en una alerta de la página.</p>
 
-  </li>
-</ul>
+```javascript
+const updateTodo = (todoId, { title, description }) => {
+  if (!title || /^\s*$/.test(title)) {
+    return;
+  }
 
-<p align="justify">Se creo una API que predecia la edad de una persona, al introducir cualquier nombre en la ruta, y en caso de que no se ingrese nada, retornará un mensaje indicando un error. Se mostrarán los dos archivos con los que se trabajo:</p>
+  updateTodoData(todoId, { title, description })
+    .then(() => {
+      getTodos()
+        .then((todos) => setTodos(todos))
+        .catch((error) => alert(error.message));
+    })
+    .catch((error) => alert(error.message));
+};
+```
 
-Archivo principal:
+<p align="justify">El siguiente es bastante sencillo, y se trata de eliminar un To-Do por medio de un id, simplemente se mandan el ID del To-Do a borrar y si todo sale bien, se obtienen los To-Do's, y nuevamente si todo sale bien, establecemos los todos para la vista del usuario. En caso de error, simplemente se muestra el error en una alerta en la página.</p>
 
-<p align="center"><img src="../img/index_age.png" alt="index age API"/></p>
+```javascript
+const removeTodo = (id) => {
+  axios.delete(`http://localhost:5000/api/v1/to-dos/${id}`).then(() => {
+    getTodos()
+      .then((todos) => setTodos(todos))
+      .catch((error) => alert(error.message));
+  });
+};
+```
 
-Archivo de rutas:
+<p align="justify">Este seria el último para mostrar si la tarea esta completada. Esto se por medio del ID, y usamos la función de <i>updateTodoData</i>, al cual se le manda el id, y el cambio que se realizo para saber si la tarea esta completa o no. Si todo sale bien, se obtienen los To-Do's y se establecen para la vista del usuario, y sino simplemente se muestra un alert con el error en la página. Finalmente retornarmos todos el contenido a usar y por último exportamos el componente TodoList.</p>
 
-<p align="center"><img src="../img/rutas_age.png" alt="routes age API"/></p>
+```javascript
 
-<p align="justify">Ahora se mostrará el testeo realizado para las pruebas:</p>
+const completeTodo = (id, is_done) => {
+  updateTodoData(id, { isDone: is_done === 1 ? 0 : 1 })
+    .then(() => {
+      getTodos()
+        .then((todos) => setTodos(todos))
+        .catch((error) => alert(error.message));
+    })
+    .catch((error) => alert(error.message));
+};
 
-Ruta con error al no ingresar el nombre:
+```
 
-<p align="center"><img src="../img/testeo_age.png" alt="ruta con error"/></p>
+<p align="justify">Mas adelante realizaremos las pruebas, para el proyecto final, y verificar que todo este funcionando de forma correcta.</p>
 
-Ruta sin error al ingresar <i>x</i> nombre:
 
-<p align="center"><img src="../img/testeo_ageGood.png" alt="ruta sin error"/></p>
-
-## Secrets Box API Challenge
-
-<p align="justify">This simple REST API was created by the NSA. The API is able to respond to a request with the NSA github account user and password. The NSA considers that its API is the safest that exists so they invite you to try to hack it.</p>
-
-### How the API works?
-
-<p align="justify">The API is able to respond with the username and password of the NSA github account only if a parameter called role is inside the body of the request and if this parameter contains the correct role.</p>
-
-<p align="justify">So basically you just have to pass a correct role param inside the body of the request to the API and the credentials as well as the account are yours, piece of cake right?</p>
-
-<p align="justify">At the end of the challenge you should be able to get a JSON containing the username and password of the account.</p>
-
-<p align="justify">Bien para dar solución a dicho problema con la API de la NSA, hay varias cosas que tomar en cuenta, y una de esas es la coerción de tipos en js, que es de cierta forma importante conocerla, Bien se menciona en la teoría que los objetos al momento de colocarlos dentro de un if tienden a covertise en un valor booleano que sea verdadero, por tanto hay que saber como y cuando manejar estas rarezas de js.</p>
-
-<p align="justify">Un claro ejemplo de por asi decirlo 'chivo', es lo siguiente: <i>La API puede responder con el nombre de usuario y la contraseña de la cuenta github de la NSA solo si un parámetro llamado función está dentro del cuerpo de la solicitud y si este parámetro contiene la <strong>función</strong> correcta.</i>, osea que en el cuerpo de la solicitud se tiene que mandar una función de JS, y esto funciona ya que se esta comparando una función con un número entonces al evaluar todos las sentencias de control if darán como restultado false, asi logrando conseguir hackear la API, y poder obtener el username y la contraseña de la cuenta de github donde se subio el problema, a continuación una demostración:</p>
-
-<p align="center"><img src="../img/box_api.png" alt="box api"/></p>
-
-<p align="justify">Como se podrán dar cuenta al pasarle una función de JS, en el cuerpo de la solicitud nos retorna las credenciales. En caso de que escribamos otra cosa nos retornará un mensaje con un error.</p>
-
-<p align="center"><img src="../img/box_api_error.png" alt="box api error"/></p>
-
-<p align="justify">Asi completando los dos challenges de las API's.</p>
+<a href="../README.md">Inicio</a>
