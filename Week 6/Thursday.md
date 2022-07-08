@@ -414,7 +414,7 @@ Un pequeño parentésis
 #### Incremento
 
 <p align="center">
-<img src="../img/Incremento.png" alt="Incremento"/>
+<img src="../img/incremento.png" alt="Incremento"/>
 </p>
 
 <p align="justify">Es lo que los desarrolladores lograron llevar ha estar terminado, un ejemplo que se da es los 5 product Backlog items que el equipo podría haber dicho que se iban a entregar, y pueden ocurrir dos casos, el caso donde se entreguen los 5 product Backlog items, o el caso donde se entreguen menos de los 5 product Backlog items que se habia dicho que se iban a entregar, y solo se entregan los que se tengan 100% listos no más no menos. Esto quiere decir que el compromiso que se tuvo al iniciar con el sprint planning aunque no siempre es así. Cumpliendo con el <strong>definition of done</strong>.</p>
